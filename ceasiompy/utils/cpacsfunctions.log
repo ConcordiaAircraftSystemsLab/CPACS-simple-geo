@@ -1,0 +1,13 @@
+2020-04-15 23:04:08,563 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - TIXI handle has been created.
+2020-04-15 23:04:08,563 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - Value found at /cpacs/header/name, default value will not be used
+2020-04-15 23:04:08,564 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - The name of the aircraft is : simple-geom-tester
+2020-04-15 23:04:08,570 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - Output CPACS file has been saved at: cpacs/test_cpacs.xml
+2020-04-15 23:04:08,570 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - TIXI Handle has been closed.
+2020-04-15 23:04:08,574 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - TIXI handle has been created.
+2020-04-15 23:04:08,632 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - TIGL handle has been created.
+2020-04-15 23:04:10,528 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - Output CPACS file has been saved at: cpacs/test_cpacs.xml
+2020-04-15 23:04:10,529 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - TIXI Handle has been closed.
+2020-04-15 23:04:10,535 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - TIXI handle has been created.
+2020-04-15 23:04:10,593 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - TIGL handle has been created.
+2020-04-15 23:04:10,899 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - Output CPACS file has been saved at: cpacs/test_cpacs.xml
+2020-04-15 23:04:10,901 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - TIXI Handle has been closed.

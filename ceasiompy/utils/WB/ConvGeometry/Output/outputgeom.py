@@ -41,7 +41,7 @@ def produce_output_txt(ag, NAME):
     RETURN
     (file) OutputTextFile --Out.: Output txt file
     """
-
+    return [] # hack because everything below isnt necessary (yet?)
     out_name = 'ToolOutput/' + NAME + '/' + NAME + '_Aircraft_Geometry.out'
     OutputTextFile = open(out_name,'w')
 
