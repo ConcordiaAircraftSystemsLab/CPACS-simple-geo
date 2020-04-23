@@ -48,9 +48,27 @@ def transformer(input_file, output_file='output_cpacs.xml', geometry_dict={}):
     #fuselage_xpath = '/cpacs/vehicles/aircraft/model/fuselages/fuselage'
     #test = tixi_handle.getDoubleElement(fuselage_xpath+'/positionings/positioning[2]/length')
     tixi_handle = section_transformer(tixi_handle, scale, ag.fuse_sec_nb[0])
-    return tixi_handle
+
+    close_tixi(tixi_handle, output_file)
+    return 'done'
 
 def section_transformer(tixi_handle, scale, num_sec):
+    """Rescales the section scaling parameter for the fuselage
+
+    Parameters
+    ----------
+    tixi_handle : tixi handle object
+        A tixi handle to the cpacs file to be changed
+    scale : num
+        The value of the scale factor
+    num_sec : num
+        The number of sections making up the fuselage
+
+    Returns
+    -------
+    tixi_handle : tixi handle object
+        The now edited tixi handle
+    """
     sections_xpath = '/cpacs/vehicles/aircraft/model/fuselages/fuselage/sections/'
     for i in np.arange(num_sec):
         section_xpath = sections_xpath + f'section[{i+1}]/transformation/scaling/'
@@ -76,8 +94,7 @@ if os.path.exists('cpacs/test_cpacs.xml'):
     os.remove('cpacs/test_cpacs.xml')
 os.system('cp cpacs/original/test_cpacs.xml cpacs/test_cpacs.xml')
 
-tixi_handle = transformer(input_file='cpacs/test_cpacs.xml', geometry_dict={'fuse_length':10})
+transformer(input_file='cpacs/test_cpacs.xml', output_file='cpacs/test_cpacs.xml', geometry_dict={'fuse_length':10})
 
-print(tixi_handle.getDoubleElement('/cpacs/vehicles/aircraft/model/fuselages/fuselage/sections/section[1]/transformation/scaling/x'))
 
 

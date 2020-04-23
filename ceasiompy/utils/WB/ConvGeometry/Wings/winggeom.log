@@ -1,25 +1,25 @@
-2020-04-23 15:12:12,220 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - ---------------------------------------------
-2020-04-23 15:12:12,220 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - ---------- Analysing wing geometry ----------
-2020-04-23 15:12:12,220 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - ---------------------------------------------
-2020-04-23 15:12:12,556 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - ---------------------------------------------
-2020-04-23 15:12:12,556 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - ---- Checking wings segments connection -----
-2020-04-23 15:12:12,556 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - ---------------------------------------------
-2020-04-23 15:12:12,570 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - ---------------------------------------------
-2020-04-23 15:12:12,570 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - ----- Evaluating wings segments length ------
-2020-04-23 15:12:12,570 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - ---------------------------------------------
-2020-04-23 15:12:12,581 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - ---------------------------------------------
-2020-04-23 15:12:12,581 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - --------------- Wing Results ----------------
-2020-04-23 15:12:12,581 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - Number of Wings [-]: 5
-2020-04-23 15:12:12,581 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - Wing symmetry plane [-]: [2, 2, 0]
-2020-04-23 15:12:12,581 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - Number of wing sections (not counting symmetry) [-]: [7, 3, 2]
-2020-04-23 15:12:12,582 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - Number of wing segments (not counting symmetry) [-]: [6, 2, 1]
-2020-04-23 15:12:12,582 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - Wing Span [m]: [60.942079302304116, 21.545049892952356, 9.717230838435453]
-2020-04-23 15:12:12,582 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - Wing MAC length [m]: [9.00727338 5.10696538 5.99367456]
-2020-04-23 15:12:12,583 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - Wing MAC x,y,z coordinate [m]: 
+2020-04-23 15:14:20,522 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - ---------------------------------------------
+2020-04-23 15:14:20,523 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - ---------- Analysing wing geometry ----------
+2020-04-23 15:14:20,523 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - ---------------------------------------------
+2020-04-23 15:14:20,879 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - ---------------------------------------------
+2020-04-23 15:14:20,879 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - ---- Checking wings segments connection -----
+2020-04-23 15:14:20,879 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - ---------------------------------------------
+2020-04-23 15:14:20,897 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - ---------------------------------------------
+2020-04-23 15:14:20,897 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - ----- Evaluating wings segments length ------
+2020-04-23 15:14:20,897 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - ---------------------------------------------
+2020-04-23 15:14:20,907 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - ---------------------------------------------
+2020-04-23 15:14:20,907 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - --------------- Wing Results ----------------
+2020-04-23 15:14:20,907 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - Number of Wings [-]: 5
+2020-04-23 15:14:20,907 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - Wing symmetry plane [-]: [2, 2, 0]
+2020-04-23 15:14:20,907 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - Number of wing sections (not counting symmetry) [-]: [7, 3, 2]
+2020-04-23 15:14:20,907 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - Number of wing segments (not counting symmetry) [-]: [6, 2, 1]
+2020-04-23 15:14:20,907 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - Wing Span [m]: [60.942079302304116, 21.545049892952356, 9.717230838435453]
+2020-04-23 15:14:20,908 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - Wing MAC length [m]: [9.00727338 5.10696538 5.99367456]
+2020-04-23 15:14:20,909 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - Wing MAC x,y,z coordinate [m]: 
 [[ 2.70069828e+01  5.62712716e+01  5.44047184e+01]
  [ 1.05884318e+01  4.52979149e+00 -1.46607200e-15]
  [-7.87843101e-01  1.21438395e+00  6.66578458e+00]]
-2020-04-23 15:12:12,583 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - Wings sections thicknes [m]: [[0.91879452 0.38319019 0.30328741]
+2020-04-23 15:14:20,910 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - Wings sections thicknes [m]: [[0.91879452 0.38319019 0.30328741]
  [1.28381551 0.2291464  0.0909855 ]
  [0.38885079 0.08886461 0.        ]
  [0.30135457 0.         0.        ]
@@ -27,18 +27,18 @@
  [0.07828566 0.         0.        ]
  [0.05329888 0.         0.        ]
  [0.         0.         0.        ]]
-2020-04-23 15:12:12,584 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - Wings sections mean thicknes [m]: [0.45342388065505396, 0.23373373483669788, 0.19713645881152975]
-2020-04-23 15:12:12,585 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - Wing segments length [m]: [[ 8.42481904  8.42481904  1.7433862   1.7433862  10.43136872]
+2020-04-23 15:14:20,910 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - Wings sections mean thicknes [m]: [0.45342388065505396, 0.23373373483669788, 0.19713645881152975]
+2020-04-23 15:14:20,911 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - Wing segments length [m]: [[ 8.42481904  8.42481904  1.7433862   1.7433862  10.43136872]
  [ 9.82307961  9.82307961 10.2234128  10.2234128   0.        ]
  [ 2.07407263  2.07407263  0.          0.          0.        ]
  [12.18849057 12.18849057  0.          0.          0.        ]
  [ 7.37698957  7.37698957  0.          0.          0.        ]
  [ 2.55424251  2.55424251  0.          0.          0.        ]]
-2020-04-23 15:12:12,585 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - Wing max chord length [m]: [13.434199999999997, 7.039200000000001, 8.408399999999999]
-2020-04-23 15:12:12,585 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - Wing min chord length [m]: [1.477800000000002, 2.463700000000003, 2.5225000000000057]
-2020-04-23 15:12:12,585 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - Main wing plantform area [m^2]: 426.7941190223622
-2020-04-23 15:12:12,585 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - Wings plantform area [m^2]: [426.7941190223622, 102.20756573226987, 2.0374482237730854e-14]
-2020-04-23 15:12:12,585 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - Volume of each wing [m^3]: [258.9285018836393, 30.512501558546028, 17.374147031668688]
-2020-04-23 15:12:12,585 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - Total wing volume [m^3]: 306.81515047385403
-2020-04-23 15:12:12,586 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - Wing volume for fuel storage [m^3]: 186.43
-2020-04-23 15:12:12,586 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - ---------------------------------------------
+2020-04-23 15:14:20,911 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - Wing max chord length [m]: [13.434199999999997, 7.039200000000001, 8.408399999999999]
+2020-04-23 15:14:20,911 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - Wing min chord length [m]: [1.477800000000002, 2.463700000000003, 2.5225000000000057]
+2020-04-23 15:14:20,911 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - Main wing plantform area [m^2]: 426.7941190223622
+2020-04-23 15:14:20,911 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - Wings plantform area [m^2]: [426.7941190223622, 102.20756573226987, 2.0374482237730854e-14]
+2020-04-23 15:14:20,911 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - Volume of each wing [m^3]: [258.9285018836393, 30.512501558546028, 17.374147031668688]
+2020-04-23 15:14:20,911 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - Total wing volume [m^3]: 306.81515047385403
+2020-04-23 15:14:20,912 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - Wing volume for fuel storage [m^3]: 186.43
+2020-04-23 15:14:20,912 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Wings/winggeom     - INFO - ---------------------------------------------
