@@ -1,14 +1,14 @@
-2020-04-23 14:52:24,742 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - TIXI handle has been created.
-2020-04-23 14:52:24,742 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - Value found at /cpacs/header/name, default value will not be used
-2020-04-23 14:52:24,742 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - The name of the aircraft is : B777 Test AeroPerfomanceMap of CPACSv3.1
-2020-04-23 14:52:24,750 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - Output CPACS file has been saved at: cpacs/test_cpacs.xml
-2020-04-23 14:52:24,751 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - TIXI Handle has been closed.
-2020-04-23 14:52:24,754 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - TIXI handle has been created.
-2020-04-23 14:52:24,809 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - TIGL handle has been created.
-2020-04-23 14:52:26,729 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - Output CPACS file has been saved at: cpacs/test_cpacs.xml
-2020-04-23 14:52:26,730 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - TIXI Handle has been closed.
-2020-04-23 14:52:26,738 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - TIXI handle has been created.
-2020-04-23 14:52:26,793 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - TIGL handle has been created.
-2020-04-23 14:52:27,104 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - Output CPACS file has been saved at: cpacs/test_cpacs.xml
-2020-04-23 14:52:27,105 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - TIXI Handle has been closed.
-2020-04-23 14:52:27,113 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - TIXI handle has been created.
+2020-04-23 15:12:10,253 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - TIXI handle has been created.
+2020-04-23 15:12:10,253 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - Value found at /cpacs/header/name, default value will not be used
+2020-04-23 15:12:10,253 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - The name of the aircraft is : B777 Test AeroPerfomanceMap of CPACSv3.1
+2020-04-23 15:12:10,260 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - Output CPACS file has been saved at: cpacs/test_cpacs.xml
+2020-04-23 15:12:10,261 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - TIXI Handle has been closed.
+2020-04-23 15:12:10,264 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - TIXI handle has been created.
+2020-04-23 15:12:10,322 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - TIGL handle has been created.
+2020-04-23 15:12:12,214 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - Output CPACS file has been saved at: cpacs/test_cpacs.xml
+2020-04-23 15:12:12,216 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - TIXI Handle has been closed.
+2020-04-23 15:12:12,223 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - TIXI handle has been created.
+2020-04-23 15:12:12,275 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - TIGL handle has been created.
+2020-04-23 15:12:12,578 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - Output CPACS file has been saved at: cpacs/test_cpacs.xml
+2020-04-23 15:12:12,580 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - TIXI Handle has been closed.
+2020-04-23 15:12:12,590 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/cpacsfunctions     - INFO - TIXI handle has been created.
