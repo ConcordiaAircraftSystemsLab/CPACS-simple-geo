@@ -1,30 +1,30 @@
-2020-04-21 15:49:36,029 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - ---------------------------------------------
-2020-04-21 15:49:36,029 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - -------- Analysing fuselage geometry --------
-2020-04-21 15:49:36,029 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - ---------------------------------------------
-2020-04-21 15:49:36,595 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - ---------------------------------------------
-2020-04-21 15:49:36,595 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - --- Checking fuselage segments connection ---
-2020-04-21 15:49:36,595 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - ---------------------------------------------
-2020-04-21 15:49:37,303 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - ---------------------------------------------
-2020-04-21 15:49:37,304 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - ---- Evaluating absolute section distance ---
-2020-04-21 15:49:37,304 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - ---------------------------------------------
-2020-04-21 15:49:38,077 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - ---------------------------------------------
-2020-04-21 15:49:38,077 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - ---------- Geometry Evaluations -------------
-2020-04-21 15:49:38,077 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - ---------- USEFUL INFO ----------------------
+2020-04-23 14:52:24,751 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - ---------------------------------------------
+2020-04-23 14:52:24,751 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - -------- Analysing fuselage geometry --------
+2020-04-23 14:52:24,751 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - ---------------------------------------------
+2020-04-23 14:52:25,315 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - ---------------------------------------------
+2020-04-23 14:52:25,316 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - --- Checking fuselage segments connection ---
+2020-04-23 14:52:25,316 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - ---------------------------------------------
+2020-04-23 14:52:26,005 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - ---------------------------------------------
+2020-04-23 14:52:26,006 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - ---- Evaluating absolute section distance ---
+2020-04-23 14:52:26,006 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - ---------------------------------------------
+2020-04-23 14:52:26,731 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - ---------------------------------------------
+2020-04-23 14:52:26,731 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - ---------- Geometry Evaluations -------------
+2020-04-23 14:52:26,731 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - ---------- USEFUL INFO ----------------------
 If fuselage or wing number is greater than 1 the informations
 of each part is listed in an array ordered per column progressively
-2020-04-21 15:49:38,077 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - Symmetry output: 0 = no symmetry, 1 =  x-y, 2 = x-z, 3 = y-z planes
-2020-04-21 15:49:38,078 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - ---------------------------------------------
-2020-04-21 15:49:38,078 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - ---------- Fuselage Results -----------------
-2020-04-21 15:49:38,078 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - Number of fuselage [-]: 1
-2020-04-21 15:49:38,078 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - Fuselage symmetry plane [-]: [0]
-2020-04-21 15:49:38,078 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - Number of fuselage sections (not counting symmetry) [-]: [47]
-2020-04-21 15:49:38,078 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - Number of fuselage segments (not counting symmetry) [-]: [46]
-2020-04-21 15:49:38,078 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - Fuse Length [m]: [62.93988]
-2020-04-21 15:49:38,078 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - Fuse nose Length [m]: [5.594000000000003]
-2020-04-21 15:49:38,078 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - Fuse cabin Length [m]: [43.07237000000002]
-2020-04-21 15:49:38,078 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - Fuse tail Length [m]: [14.273510000000023]
-2020-04-21 15:49:38,079 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - Aircraft Length [m]: 63.72875458683601
-2020-04-21 15:49:38,079 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - Mean fuselage width [m]: 4.0678877001687495
-2020-04-21 15:49:38,079 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - Volume of each cabin [m^3]: [1243.8009825399668]
-2020-04-21 15:49:38,079 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - Volume of each fuselage [m^3]: [1437.3524321560913]
-2020-04-21 15:49:38,079 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - ---------------------------------------------
+2020-04-23 14:52:26,731 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - Symmetry output: 0 = no symmetry, 1 =  x-y, 2 = x-z, 3 = y-z planes
+2020-04-23 14:52:26,731 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - ---------------------------------------------
+2020-04-23 14:52:26,731 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - ---------- Fuselage Results -----------------
+2020-04-23 14:52:26,731 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - Number of fuselage [-]: 1
+2020-04-23 14:52:26,732 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - Fuselage symmetry plane [-]: [0]
+2020-04-23 14:52:26,732 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - Number of fuselage sections (not counting symmetry) [-]: [47]
+2020-04-23 14:52:26,732 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - Number of fuselage segments (not counting symmetry) [-]: [46]
+2020-04-23 14:52:26,732 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - Fuse Length [m]: [62.93988]
+2020-04-23 14:52:26,732 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - Fuse nose Length [m]: [5.594000000000003]
+2020-04-23 14:52:26,732 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - Fuse cabin Length [m]: [43.07237000000002]
+2020-04-23 14:52:26,732 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - Fuse tail Length [m]: [14.273510000000023]
+2020-04-23 14:52:26,732 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - Aircraft Length [m]: 63.72875458683601
+2020-04-23 14:52:26,732 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - Mean fuselage width [m]: 4.0678877001687495
+2020-04-23 14:52:26,733 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - Volume of each cabin [m^3]: [1243.8009825399668]
+2020-04-23 14:52:26,733 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - Volume of each fuselage [m^3]: [1437.3524321560913]
+2020-04-23 14:52:26,733 - /run/media/noah/Data/Documents/Jobs/W2020_SLH/CPACS-simple-geo/ceasiompy/utils/WB/ConvGeometry/Fuselage/fusegeom     - INFO - ---------------------------------------------

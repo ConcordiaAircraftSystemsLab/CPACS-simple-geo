@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <cpacs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cpacs_schema.xsd">
   <header>
-    <name>simple-geom-tester</name>
+    <name>B777 Test AeroPerfomanceMap of CPACSv3.1</name>
     <description>...</description>
     <creator>Daniel Boehnke, DLR-LK</creator>
     <timestamp>2010-07-07T12:00:00</timestamp>
@@ -3447,124 +3447,6 @@
             </transformation>
           </engine>
         </engines>
-        <analyses>
-          <aeroPerformance>
-            <aeroMap uID="pyTornado_1points">
-              <name>aeroMap_Test</name>
-              <description>aeroMap to test CEASIOMpy calculated with PyTornado</description>
-              <boundaryConditions>
-                <atmosphericModel>ISA</atmosphericModel>
-              </boundaryConditions>
-              <aeroPerformanceMap>
-                <altitude mapType="vector">0</altitude>
-                <machNumber mapType="vector">0.3</machNumber>
-                <angleOfAttack mapType="vector">0.0</angleOfAttack>
-                <angleOfSideslip mapType="vector">0.0</angleOfSideslip>
-              </aeroPerformanceMap>
-            </aeroMap>
-            <aeroMap uID="pyTornado_3points">
-              <name>aeroMap_Test</name>
-              <description>aeroMap to test CEASIOMpy calculated with PyTornado</description>
-              <boundaryConditions>
-                <atmosphericModel>ISA</atmosphericModel>
-              </boundaryConditions>
-              <aeroPerformanceMap>
-                <altitude mapType="vector">0;0;0</altitude>
-                <machNumber mapType="vector">0.3;0.3;0.3</machNumber>
-                <angleOfAttack mapType="vector">-2.0;0.0;4.0</angleOfAttack>
-                <angleOfSideslip mapType="vector">0.0;0.0;0.0</angleOfSideslip>
-              </aeroPerformanceMap>
-            </aeroMap>
-            <aeroMap uID="pyTornado">
-              <name>aeroMap_Test</name>
-              <description>aeroMap to test CEASIOMpy calculated with PyTornado</description>
-              <boundaryConditions>
-                <atmosphericModel>ISA</atmosphericModel>
-              </boundaryConditions>
-              <aeroPerformanceMap>
-                <altitude mapType="vector">0;0;0;0;0;0;0;0;0;0;0;0</altitude>
-                <machNumber mapType="vector">0.3;0.3;0.3;0.3;0.3;0.3;0.3;0.3;0.3;0.3;0.3;0.3</machNumber>
-                <angleOfAttack mapType="vector">-8.0;-4.0;-2.0;-1.0;0.0;1.0;2.0;3.0;4.0;6.0;8.0;10.0</angleOfAttack>
-                <angleOfSideslip mapType="vector">0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0</angleOfSideslip>
-              </aeroPerformanceMap>
-            </aeroMap>
-            <aeroMap uID="aeroMap_SU2">
-              <name>aeroMap_Test</name>
-              <description>aeroMap to test CEASIOMpy Calculated with SU2</description>
-              <boundaryConditions>
-                <atmosphericModel>ISA</atmosphericModel>
-              </boundaryConditions>
-              <aeroPerformanceMap>
-                <altitude mapType="vector">0;0;0;0;0;0</altitude>
-                <machNumber mapType="vector">0.3;0.3;0.3;0.3;0.3;0.3</machNumber>
-                <angleOfAttack mapType="vector">-6.0;-2.0;0.0;2.0;4.0;8.0</angleOfAttack>
-                <angleOfSideslip mapType="vector">0.0;0.0;0.0;0.0;0.0;0.0</angleOfSideslip>
-              </aeroPerformanceMap>
-            </aeroMap>
-          </aeroPerformance>
-          <massBreakdown>
-            <designMasses>
-              <mTOM uID="MTOM">
-                <mass>335254</mass>
-                <name>Maximum take-off mass</name>
-                <description>Maximum take off mass [kg], CoG coordinate [m] and moment of inertia.</description>
-              </mTOM>
-              <mZFM uID="MZFM">
-                <mass>216803</mass>
-                <name>Maximum zero fuel mass</name>
-                <description>Maximum zero fuel mass [kg] and corresponding CoG coordinate [m], moment of inertia.</description>
-              </mZFM>
-            </designMasses>
-            <fuel>
-              <massDescription uID="MFM">
-                <mass>148064</mass>
-                <name>Max fuel mass</name>
-                <description>Maximum fuel mass [kg].</description>
-              </massDescription>
-            </fuel>
-            <mOEM>
-              <massDescription uID="OEM">
-                <mass>171338</mass>
-                <name>Operating empty mass</name>
-                <description>Operating empty mass [kg] and related inertia [kgm^2].</description>
-              </massDescription>
-              <mOperatorItems>
-                <mCrewMembers>
-                  <massDescription uID="massCrew">
-                    <mass>816</mass>
-                  </massDescription>
-                </mCrewMembers>
-              </mOperatorItems>
-              <mEM>
-                <mSystems>
-                  <massDescription uID="mSys">
-                    <mass>33936</mass>
-                  </massDescription>
-                </mSystems>
-                <mStructure>
-                  <massDescription uID="mStrt">
-                    <mass>111670</mass>
-                  </massDescription>
-                </mStructure>
-                <mPowerUnits>
-                  <massDescription uID="mEng">
-                    <mass>16032</mass>
-                  </massDescription>
-                </mPowerUnits>
-              </mEM>
-            </mOEM>
-            <payload>
-              <massDescription uID="MPM">
-                <mass>45465</mass>
-                <name>Max payload mass</name>
-                <description>Maximum payload mass [kg].</description>
-              </massDescription>
-              <mCargo>
-                <massCargo>0</massCargo>
-              </mCargo>
-            </payload>
-          </massBreakdown>
-        </analyses>
       </model>
     </aircraft>
     <profiles>
@@ -4166,24 +4048,6 @@
       </fuel>
     </fuels>
     <engines>
-      <engine1 uID="EngineuID_1_mass">
-        <name>Engine1</name>
-        <analysis>
-          <mass>
-            <mass>8016</mass>
-          </mass>
-          <thrust00>446.568</thrust00>
-        </analysis>
-      </engine1>
-      <engine2 uID="EngineuID_2_mass">
-        <name>Engine2</name>
-        <analysis>
-          <mass>
-            <mass>8016</mass>
-          </mass>
-          <thrust00>446.568</thrust00>
-        </analysis>
-      </engine2>
     </engines>
   </vehicles>
   <toolspecific>
