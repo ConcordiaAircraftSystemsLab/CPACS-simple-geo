@@ -45,10 +45,8 @@ def transformer(input_file, output_file='output_cpacs.xml', geometry_dict={}):
     scale = fuse_length_change/fuse_length
 
     tixi_handle = open_tixi(input_file)
-    #fuselage_xpath = '/cpacs/vehicles/aircraft/model/fuselages/fuselage'
-    #test = tixi_handle.getDoubleElement(fuselage_xpath+'/positionings/positioning[2]/length')
     tixi_handle = section_transformer(tixi_handle, scale, ag.fuse_sec_nb[0])
-
+    tixi_handle = positioning_transformer(tixi_handle, scale)
     close_tixi(tixi_handle, output_file)
     return 'done'
 
@@ -77,12 +75,37 @@ def section_transformer(tixi_handle, scale, num_sec):
         y_val = tixi_handle.getDoubleElement(section_xpath+'y')
         z_val = tixi_handle.getDoubleElement(section_xpath+'z')
         # update current values
-        tixi_handle.updateDoubleElement(section_xpath+'x', x_val*scale, '%.5f')
-        tixi_handle.updateDoubleElement(section_xpath+'y', y_val*scale, '%.5f')
-        tixi_handle.updateDoubleElement(section_xpath+'z', z_val*scale, '%.5f')
+        tixi_handle.updateDoubleElement(section_xpath+'x', x_val*scale, '%.8f')
+        tixi_handle.updateDoubleElement(section_xpath+'y', y_val*scale, '%.8f')
+        tixi_handle.updateDoubleElement(section_xpath+'z', z_val*scale, '%.8f')
 
     return tixi_handle
 
+def positioning_transformer(tixi_handle, scale):
+    """Rescales the length of each fuselage segment
+
+    Parameters
+    ----------
+    tixi_handle : tixi handle object
+        A tixi handle to the cpacs file to be changed
+    scale : num
+        The value of the scale factor
+
+    Returns
+    -------
+    tixi_handle : tixi handle object
+        The now edited tixi handle
+    """
+
+    positionings_xpath = '/cpacs/vehicles/aircraft/model/fuselages/fuselage/positionings'
+    num_pos = tixi_handle.getNamedChildrenCount(positionings_xpath, 'positioning')
+    for i in np.arange(num_pos):
+        length_xpath = positionings_xpath + f'/positioning[{i+1}]/length'
+        # get current values
+        length = tixi_handle.getDoubleElement(length_xpath)
+        # update current values
+        tixi_handle.updateDoubleElement(length_xpath, length*scale, '%.8f')
+    return tixi_handle
 
 
 

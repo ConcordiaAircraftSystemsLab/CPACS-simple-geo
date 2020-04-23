@@ -809,9 +809,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section1ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section1ID_transformation1_translation1">
                     <x>0</x>
@@ -852,9 +852,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section2ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section2ID_transformation1_translation1">
                     <x>0</x>
@@ -895,9 +895,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section3ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section3ID_transformation1_translation1">
                     <x>0</x>
@@ -938,9 +938,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section4ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section4ID_transformation1_translation1">
                     <x>0</x>
@@ -981,9 +981,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section5ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section5ID_transformation1_translation1">
                     <x>0</x>
@@ -1024,9 +1024,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section6ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section6ID_transformation1_translation1">
                     <x>0</x>
@@ -1067,9 +1067,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section7ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section7ID_transformation1_translation1">
                     <x>0</x>
@@ -1110,9 +1110,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section8ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section8ID_transformation1_translation1">
                     <x>0</x>
@@ -1153,9 +1153,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section9ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section9ID_transformation1_translation1">
                     <x>0</x>
@@ -1196,9 +1196,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section10ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section10ID_transformation1_translation1">
                     <x>0</x>
@@ -1239,9 +1239,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section11ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section11ID_transformation1_translation1">
                     <x>0</x>
@@ -1282,9 +1282,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section12ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section12ID_transformation1_translation1">
                     <x>0</x>
@@ -1325,9 +1325,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section13ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section13ID_transformation1_translation1">
                     <x>0</x>
@@ -1368,9 +1368,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section14ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section14ID_transformation1_translation1">
                     <x>0</x>
@@ -1411,9 +1411,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section15ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section15ID_transformation1_translation1">
                     <x>0</x>
@@ -1454,9 +1454,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section16ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section16ID_transformation1_translation1">
                     <x>0</x>
@@ -1497,9 +1497,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section17ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section17ID_transformation1_translation1">
                     <x>0</x>
@@ -1540,9 +1540,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section18ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section18ID_transformation1_translation1">
                     <x>0</x>
@@ -1583,9 +1583,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section19ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section19ID_transformation1_translation1">
                     <x>0</x>
@@ -1626,9 +1626,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section20ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section20ID_transformation1_translation1">
                     <x>0</x>
@@ -1669,9 +1669,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section21ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section21ID_transformation1_translation1">
                     <x>0</x>
@@ -1712,9 +1712,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section22ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section22ID_transformation1_translation1">
                     <x>0</x>
@@ -1755,9 +1755,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section23ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section23ID_transformation1_translation1">
                     <x>0</x>
@@ -1798,9 +1798,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section24ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section24ID_transformation1_translation1">
                     <x>0</x>
@@ -1841,9 +1841,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section25ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section25ID_transformation1_translation1">
                     <x>0</x>
@@ -1884,9 +1884,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section26ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section26ID_transformation1_translation1">
                     <x>0</x>
@@ -1927,9 +1927,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section27ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section27ID_transformation1_translation1">
                     <x>0</x>
@@ -1970,9 +1970,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section28ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section28ID_transformation1_translation1">
                     <x>0</x>
@@ -2013,9 +2013,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section29ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section29ID_transformation1_translation1">
                     <x>0</x>
@@ -2056,9 +2056,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section30ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section30ID_transformation1_translation1">
                     <x>0</x>
@@ -2099,9 +2099,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section31ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section31ID_transformation1_translation1">
                     <x>0</x>
@@ -2142,9 +2142,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section32ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section32ID_transformation1_translation1">
                     <x>0</x>
@@ -2185,9 +2185,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section33ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section33ID_transformation1_translation1">
                     <x>0</x>
@@ -2228,9 +2228,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section34ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section34ID_transformation1_translation1">
                     <x>0</x>
@@ -2271,9 +2271,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section35ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section35ID_transformation1_translation1">
                     <x>0</x>
@@ -2314,9 +2314,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section36ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section36ID_transformation1_translation1">
                     <x>0</x>
@@ -2357,9 +2357,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section37ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section37ID_transformation1_translation1">
                     <x>0</x>
@@ -2400,9 +2400,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section38ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section38ID_transformation1_translation1">
                     <x>0</x>
@@ -2443,9 +2443,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section39ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section39ID_transformation1_translation1">
                     <x>0</x>
@@ -2486,9 +2486,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section40ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section40ID_transformation1_translation1">
                     <x>0</x>
@@ -2529,9 +2529,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section41ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section41ID_transformation1_translation1">
                     <x>0</x>
@@ -2572,9 +2572,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section42ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section42ID_transformation1_translation1">
                     <x>0</x>
@@ -2615,9 +2615,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section43ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section43ID_transformation1_translation1">
                     <x>0</x>
@@ -2658,9 +2658,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section44ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section44ID_transformation1_translation1">
                     <x>0</x>
@@ -2701,9 +2701,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section45ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section45ID_transformation1_translation1">
                     <x>0</x>
@@ -2744,9 +2744,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section46ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section46ID_transformation1_translation1">
                     <x>0</x>
@@ -2787,9 +2787,9 @@
                     <z>0</z>
                   </rotation>
                   <scaling uID="Fuslage_1section47ID_transformation1_scaling1">
-                    <x>0.15888</x>
-                    <y>0.15888</y>
-                    <z>0.15888</z>
+                    <x>0.15888178</x>
+                    <y>0.15888178</y>
+                    <z>0.15888178</z>
                   </scaling>
                   <translation refType="absLocal" uID="Fuslage_1section47ID_transformation1_translation1">
                     <x>0</x>
@@ -2828,7 +2828,7 @@
                 <dihedralAngle>0</dihedralAngle>
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section1ID</toSectionUID>
-                <length>0</length>
+                <length>0.00000000</length>
               </positioning>
               <positioning uID="Fuslage_1positioning2ID">
                 <name>Fuslage_1positioning2</name>
@@ -2836,7 +2836,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section2ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section1ID</fromSectionUID>
-                <length>0.18027</length>
+                <length>0.02864162</length>
               </positioning>
               <positioning uID="Fuslage_1positioning3ID">
                 <name>Fuslage_1positioning3</name>
@@ -2844,7 +2844,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section3ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section2ID</fromSectionUID>
-                <length>0.18027</length>
+                <length>0.02864162</length>
               </positioning>
               <positioning uID="Fuslage_1positioning4ID">
                 <name>Fuslage_1positioning4</name>
@@ -2852,7 +2852,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section4ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section3ID</fromSectionUID>
-                <length>0.18027</length>
+                <length>0.02864162</length>
               </positioning>
               <positioning uID="Fuslage_1positioning5ID">
                 <name>Fuslage_1positioning5</name>
@@ -2860,7 +2860,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section5ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section4ID</fromSectionUID>
-                <length>0.1803</length>
+                <length>0.02864638</length>
               </positioning>
               <positioning uID="Fuslage_1positioning6ID">
                 <name>Fuslage_1positioning6</name>
@@ -2868,7 +2868,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section6ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section5ID</fromSectionUID>
-                <length>0.18026</length>
+                <length>0.02864003</length>
               </positioning>
               <positioning uID="Fuslage_1positioning7ID">
                 <name>Fuslage_1positioning7</name>
@@ -2876,7 +2876,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section7ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section6ID</fromSectionUID>
-                <length>0.18026</length>
+                <length>0.02864003</length>
               </positioning>
               <positioning uID="Fuslage_1positioning8ID">
                 <name>Fuslage_1positioning8</name>
@@ -2884,7 +2884,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section8ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section7ID</fromSectionUID>
-                <length>0.18026</length>
+                <length>0.02864003</length>
               </positioning>
               <positioning uID="Fuslage_1positioning9ID">
                 <name>Fuslage_1positioning9</name>
@@ -2892,7 +2892,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section9ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section8ID</fromSectionUID>
-                <length>0.54154</length>
+                <length>0.08604084</length>
               </positioning>
               <positioning uID="Fuslage_1positioning10ID">
                 <name>Fuslage_1positioning10</name>
@@ -2900,7 +2900,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section10ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section9ID</fromSectionUID>
-                <length>0.54147</length>
+                <length>0.08602972</length>
               </positioning>
               <positioning uID="Fuslage_1positioning11ID">
                 <name>Fuslage_1positioning11</name>
@@ -2908,7 +2908,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section11ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section10ID</fromSectionUID>
-                <length>0.54154</length>
+                <length>0.08604084</length>
               </positioning>
               <positioning uID="Fuslage_1positioning12ID">
                 <name>Fuslage_1positioning12</name>
@@ -2916,7 +2916,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section12ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section11ID</fromSectionUID>
-                <length>0.54154</length>
+                <length>0.08604084</length>
               </positioning>
               <positioning uID="Fuslage_1positioning13ID">
                 <name>Fuslage_1positioning13</name>
@@ -2924,7 +2924,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section13ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section12ID</fromSectionUID>
-                <length>0.54147</length>
+                <length>0.08602972</length>
               </positioning>
               <positioning uID="Fuslage_1positioning14ID">
                 <name>Fuslage_1positioning14</name>
@@ -2932,7 +2932,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section14ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section13ID</fromSectionUID>
-                <length>0.54154</length>
+                <length>0.08604084</length>
               </positioning>
               <positioning uID="Fuslage_1positioning15ID">
                 <name>Fuslage_1positioning15</name>
@@ -2940,7 +2940,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section15ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section14ID</fromSectionUID>
-                <length>0.54154</length>
+                <length>0.08604084</length>
               </positioning>
               <positioning uID="Fuslage_1positioning16ID">
                 <name>Fuslage_1positioning16</name>
@@ -2948,7 +2948,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section16ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section15ID</fromSectionUID>
-                <length>0.54147</length>
+                <length>0.08602972</length>
               </positioning>
               <positioning uID="Fuslage_1positioning17ID">
                 <name>Fuslage_1positioning17</name>
@@ -2956,7 +2956,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section17ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section16ID</fromSectionUID>
-                <length>0.54084</length>
+                <length>0.08592962</length>
               </positioning>
               <positioning uID="Fuslage_1positioning18ID">
                 <name>Fuslage_1positioning18</name>
@@ -2964,7 +2964,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section18ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section17ID</fromSectionUID>
-                <length>0.54122</length>
+                <length>0.08599000</length>
               </positioning>
               <positioning uID="Fuslage_1positioning19ID">
                 <name>Fuslage_1positioning19</name>
@@ -2972,7 +2972,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section19ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section18ID</fromSectionUID>
-                <length>0.54191</length>
+                <length>0.08609962</length>
               </positioning>
               <positioning uID="Fuslage_1positioning20ID">
                 <name>Fuslage_1positioning20</name>
@@ -2980,7 +2980,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section20ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section19ID</fromSectionUID>
-                <length>0.54128</length>
+                <length>0.08599953</length>
               </positioning>
               <positioning uID="Fuslage_1positioning21ID">
                 <name>Fuslage_1positioning21</name>
@@ -2988,7 +2988,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section21ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section20ID</fromSectionUID>
-                <length>0.54191</length>
+                <length>0.08609962</length>
               </positioning>
               <positioning uID="Fuslage_1positioning22ID">
                 <name>Fuslage_1positioning22</name>
@@ -2996,7 +2996,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section22ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section21ID</fromSectionUID>
-                <length>0.54128</length>
+                <length>0.08599953</length>
               </positioning>
               <positioning uID="Fuslage_1positioning23ID">
                 <name>Fuslage_1positioning23</name>
@@ -3004,7 +3004,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section23ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section22ID</fromSectionUID>
-                <length>0.54128</length>
+                <length>0.08599953</length>
               </positioning>
               <positioning uID="Fuslage_1positioning24ID">
                 <name>Fuslage_1positioning24</name>
@@ -3012,7 +3012,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section24ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section23ID</fromSectionUID>
-                <length>0.54191</length>
+                <length>0.08609962</length>
               </positioning>
               <positioning uID="Fuslage_1positioning25ID">
                 <name>Fuslage_1positioning25</name>
@@ -3020,7 +3020,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section25ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section24ID</fromSectionUID>
-                <length>0.54128</length>
+                <length>0.08599953</length>
               </positioning>
               <positioning uID="Fuslage_1positioning26ID">
                 <name>Fuslage_1positioning26</name>
@@ -3028,7 +3028,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section26ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section25ID</fromSectionUID>
-                <length>5.9837</length>
+                <length>0.95070089</length>
               </positioning>
               <positioning uID="Fuslage_1positioning27ID">
                 <name>Fuslage_1positioning27</name>
@@ -3036,7 +3036,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section27ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section26ID</fromSectionUID>
-                <length>5.9843</length>
+                <length>0.95079622</length>
               </positioning>
               <positioning uID="Fuslage_1positioning28ID">
                 <name>Fuslage_1positioning28</name>
@@ -3044,7 +3044,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section28ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section27ID</fromSectionUID>
-                <length>5.9837</length>
+                <length>0.95070089</length>
               </positioning>
               <positioning uID="Fuslage_1positioning29ID">
                 <name>Fuslage_1positioning29</name>
@@ -3052,7 +3052,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section29ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section28ID</fromSectionUID>
-                <length>5.9837</length>
+                <length>0.95070089</length>
               </positioning>
               <positioning uID="Fuslage_1positioning30ID">
                 <name>Fuslage_1positioning30</name>
@@ -3060,7 +3060,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section30ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section29ID</fromSectionUID>
-                <length>5.9843</length>
+                <length>0.95079622</length>
               </positioning>
               <positioning uID="Fuslage_1positioning31ID">
                 <name>Fuslage_1positioning31</name>
@@ -3068,7 +3068,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section31ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section30ID</fromSectionUID>
-                <length>0.58282</length>
+                <length>0.09259948</length>
               </positioning>
               <positioning uID="Fuslage_1positioning32ID">
                 <name>Fuslage_1positioning32</name>
@@ -3076,7 +3076,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section32ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section31ID</fromSectionUID>
-                <length>0.60234</length>
+                <length>0.09570085</length>
               </positioning>
               <positioning uID="Fuslage_1positioning33ID">
                 <name>Fuslage_1positioning33</name>
@@ -3084,7 +3084,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section33ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section32ID</fromSectionUID>
-                <length>1.768</length>
+                <length>0.28090298</length>
               </positioning>
               <positioning uID="Fuslage_1positioning34ID">
                 <name>Fuslage_1positioning34</name>
@@ -3092,7 +3092,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section34ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section33ID</fromSectionUID>
-                <length>1.79</length>
+                <length>0.28439838</length>
               </positioning>
               <positioning uID="Fuslage_1positioning35ID">
                 <name>Fuslage_1positioning35</name>
@@ -3100,7 +3100,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section35ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section34ID</fromSectionUID>
-                <length>1.7686</length>
+                <length>0.28099831</length>
               </positioning>
               <positioning uID="Fuslage_1positioning36ID">
                 <name>Fuslage_1positioning36</name>
@@ -3108,7 +3108,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section36ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section35ID</fromSectionUID>
-                <length>1.768</length>
+                <length>0.28090298</length>
               </positioning>
               <positioning uID="Fuslage_1positioning37ID">
                 <name>Fuslage_1positioning37</name>
@@ -3116,7 +3116,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section37ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section36ID</fromSectionUID>
-                <length>1.7888</length>
+                <length>0.28420772</length>
               </positioning>
               <positioning uID="Fuslage_1positioning38ID">
                 <name>Fuslage_1positioning38</name>
@@ -3124,7 +3124,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section38ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section37ID</fromSectionUID>
-                <length>1.7692</length>
+                <length>0.28109364</length>
               </positioning>
               <positioning uID="Fuslage_1positioning39ID">
                 <name>Fuslage_1positioning39</name>
@@ -3132,7 +3132,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section39ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section38ID</fromSectionUID>
-                <length>0.88368</length>
+                <length>0.14040065</length>
               </positioning>
               <positioning uID="Fuslage_1positioning40ID">
                 <name>Fuslage_1positioning40</name>
@@ -3140,7 +3140,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section40ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section39ID</fromSectionUID>
-                <length>0.88431</length>
+                <length>0.14050074</length>
               </positioning>
               <positioning uID="Fuslage_1positioning41ID">
                 <name>Fuslage_1positioning41</name>
@@ -3148,7 +3148,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section41ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section40ID</fromSectionUID>
-                <length>0.90571</length>
+                <length>0.14390081</length>
               </positioning>
               <positioning uID="Fuslage_1positioning42ID">
                 <name>Fuslage_1positioning42</name>
@@ -3156,7 +3156,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section42ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section41ID</fromSectionUID>
-                <length>1.746</length>
+                <length>0.27740758</length>
               </positioning>
               <positioning uID="Fuslage_1positioning43ID">
                 <name>Fuslage_1positioning43</name>
@@ -3164,7 +3164,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section43ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section42ID</fromSectionUID>
-                <length>1.795</length>
+                <length>0.28519279</length>
               </positioning>
               <positioning uID="Fuslage_1positioning44ID">
                 <name>Fuslage_1positioning44</name>
@@ -3172,7 +3172,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section44ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section43ID</fromSectionUID>
-                <length>1.7843</length>
+                <length>0.28349276</length>
               </positioning>
               <positioning uID="Fuslage_1positioning45ID">
                 <name>Fuslage_1positioning45</name>
@@ -3180,7 +3180,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section45ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section44ID</fromSectionUID>
-                <length>1.768</length>
+                <length>0.28090298</length>
               </positioning>
               <positioning uID="Fuslage_1positioning46ID">
                 <name>Fuslage_1positioning46</name>
@@ -3188,7 +3188,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section46ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section45ID</fromSectionUID>
-                <length>0.94851</length>
+                <length>0.15070095</length>
               </positioning>
               <positioning uID="Fuslage_1positioning47ID">
                 <name>Fuslage_1positioning47</name>
@@ -3196,7 +3196,7 @@
                 <sweepAngle>90</sweepAngle>
                 <toSectionUID>Fuslage_1section47ID</toSectionUID>
                 <fromSectionUID>Fuslage_1section46ID</fromSectionUID>
-                <length>0</length>
+                <length>0.00000000</length>
               </positioning>
             </positionings>
             <segments>
