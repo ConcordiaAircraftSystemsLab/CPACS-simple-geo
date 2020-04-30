@@ -80,7 +80,7 @@ def section_transformer(tixi_handle, scale, num_sec):
             f'section[{i+1}]/transformation/translation/z'
 
         # get current values
-        x_val = tixi_handle.getDoubleElement(scaling_xpath+'x')
+        x_val = tixi_handle.getDoubleElement(scaling_xpath+'x') 
         y_val = tixi_handle.getDoubleElement(scaling_xpath+'y')
         z_val = tixi_handle.getDoubleElement(scaling_xpath+'z')
         z_val_elem = tixi_handle.getDoubleElement(translate_xpath)
