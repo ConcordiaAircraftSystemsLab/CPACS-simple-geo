@@ -116,6 +116,6 @@ if os.path.exists('cpacs/test_cpacs.xml'):
     os.remove('cpacs/test_cpacs.xml')
 os.system('cp cpacs/original/test_cpacs.xml cpacs/test_cpacs.xml')
 
-transformer(input_file='cpacs/test_cpacs.xml',
+transformer(input_file='cpacs/original/test_cpacs.xml',
             output_file='cpacs/test_cpacs.xml',
             geometry_dict={'fuse_length': 30})
