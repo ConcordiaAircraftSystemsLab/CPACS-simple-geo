@@ -31,25 +31,9 @@ def transformer(input_file, output_file='output_cpacs.xml', geometry_dict={}):
 
     tixi_handle = open_tixi(input_file)
     tixi_handle = section_transformer(tixi_handle, scale, ag.fuse_sec_nb[0])
-    #tixi_handle = fuse_transformer(tixi_handle, scale)
     tixi_handle = positioning_transformer(tixi_handle, scale)
     close_tixi(tixi_handle, output_file)
     return 'done'
-
-
-def fuse_transformer(tixi_handle, scale):
-    xpath = '/cpacs/vehicles/aircraft/model/fuselages/\
-                fuselage/transformation/scaling/'
-    # get current values
-    x_val = tixi_handle.getDoubleElement(xpath+'x')
-    y_val = tixi_handle.getDoubleElement(xpath+'y')
-    z_val = tixi_handle.getDoubleElement(xpath+'z')
-    # update current values
-    tixi_handle.updateDoubleElement(xpath+'x', x_val*scale, '%.8f')
-    tixi_handle.updateDoubleElement(xpath+'y', y_val*scale, '%.8f')
-    tixi_handle.updateDoubleElement(xpath+'z', z_val*scale, '%.8f')
-
-    return tixi_handle
 
 
 def section_transformer(tixi_handle, scale, num_sec):
