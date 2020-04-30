@@ -816,7 +816,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section1ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>-0.61455</z>
+                    <z>-0.29292239</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -859,7 +859,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section2ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>-0.6016</z>
+                    <z>-0.28674983</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -902,7 +902,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section3ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>-0.56439</z>
+                    <z>-0.26901386</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -945,7 +945,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section4ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>-0.56184</z>
+                    <z>-0.26779841</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -988,7 +988,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section5ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>-0.56876</z>
+                    <z>-0.27109680</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -1031,7 +1031,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section6ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>-0.57634</z>
+                    <z>-0.27470977</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -1074,7 +1074,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section7ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>-0.58382</z>
+                    <z>-0.27827508</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -1117,7 +1117,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section8ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>-0.59015</z>
+                    <z>-0.28129224</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -1160,7 +1160,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section9ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>-0.41198</z>
+                    <z>-0.19636834</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -1203,7 +1203,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section10ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>-0.3505</z>
+                    <z>-0.16706419</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -1246,7 +1246,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section11ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>-0.30728</z>
+                    <z>-0.14646358</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -1289,7 +1289,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section12ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>-0.26468</z>
+                    <z>-0.12615849</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -1332,7 +1332,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section13ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>-0.2264</z>
+                    <z>-0.10791250</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -1375,7 +1375,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section14ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>-0.19494</z>
+                    <z>-0.09291724</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -1418,7 +1418,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section15ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>-0.17155</z>
+                    <z>-0.08176851</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -1461,7 +1461,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section16ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>-0.1563</z>
+                    <z>-0.07449967</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -1504,7 +1504,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section17ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>-0.14803</z>
+                    <z>-0.07055781</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -1547,7 +1547,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section18ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>-0.14435</z>
+                    <z>-0.06880375</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -1590,7 +1590,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section19ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>-0.14169</z>
+                    <z>-0.06753588</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -1633,7 +1633,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section20ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>-0.11245</z>
+                    <z>-0.05359877</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -1676,7 +1676,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section21ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>-0.09451</z>
+                    <z>-0.04504775</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -1719,7 +1719,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section22ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>-0.075648</z>
+                    <z>-0.03605727</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -1762,7 +1762,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section23ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>-0.054557</z>
+                    <z>-0.02600434</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -1805,7 +1805,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section24ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>-0.032814</z>
+                    <z>-0.01564064</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -1848,7 +1848,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section25ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>0</z>
+                    <z>0.00000000</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -1891,7 +1891,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section26ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>0</z>
+                    <z>0.00000000</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -1934,7 +1934,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section27ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>0</z>
+                    <z>0.00000000</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -1977,7 +1977,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section28ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>0</z>
+                    <z>0.00000000</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -2020,7 +2020,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section29ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>0</z>
+                    <z>0.00000000</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -2063,7 +2063,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section30ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>0</z>
+                    <z>0.00000000</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -2106,7 +2106,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section31ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>0.017424</z>
+                    <z>0.00830507</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -2149,7 +2149,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section32ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>0.045325</z>
+                    <z>0.02160395</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -2192,7 +2192,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section33ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>0.16004</z>
+                    <z>0.07628232</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -2235,7 +2235,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section34ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>0.29171</z>
+                    <z>0.13904221</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -2278,7 +2278,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section35ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>0.41976</z>
+                    <z>0.20007664</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -2321,7 +2321,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section36ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>0.54388</z>
+                    <z>0.25923786</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -2364,7 +2364,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section37ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>0.66089</z>
+                    <z>0.31501013</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -2407,7 +2407,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section38ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>0.76404</z>
+                    <z>0.36417610</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -2450,7 +2450,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section39ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>0.81068</z>
+                    <z>0.38640684</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -2493,7 +2493,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section40ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>0.8546</z>
+                    <z>0.40734110</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -2536,7 +2536,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section41ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>0.89732</z>
+                    <z>0.42770339</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -2579,7 +2579,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section42ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>0.97522</z>
+                    <z>0.46483406</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -2622,7 +2622,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section43ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>1.049</z>
+                    <z>0.50000095</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -2665,7 +2665,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section44ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>1.1094</z>
+                    <z>0.52879033</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -2708,7 +2708,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section45ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>1.153</z>
+                    <z>0.54957207</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -2751,7 +2751,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section46ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>1.179</z>
+                    <z>0.56196485</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -2794,7 +2794,7 @@
                   <translation refType="absLocal" uID="Fuslage_1section47ID_transformation1_translation1">
                     <x>0</x>
                     <y>0</y>
-                    <z>1.179</z>
+                    <z>0.56196485</z>
                   </translation>
                 </transformation>
                 <elements>
@@ -3434,18 +3434,6 @@
           </fuselage>
         </fuselages>
         <engines>
-          <engine uID="B777PW4090UID">
-            <name>name</name>
-            <engineUID>3PW066</engineUID>
-            <parentUID>multi_wing_1ID</parentUID>
-            <transformation uID="B777PW4090UID_transformation1">
-              <translation uID="B777PW4090UID_transformation1_translation1">
-                <x>0.0</x>
-                <y>0.0</y>
-                <z>0.0</z>
-              </translation>
-            </transformation>
-          </engine>
         </engines>
       </model>
     </aircraft>
