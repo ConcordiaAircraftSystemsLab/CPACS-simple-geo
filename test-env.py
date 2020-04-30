@@ -54,6 +54,8 @@ def fuse_transformer(tixi_handle, scale):
 
 def section_transformer(tixi_handle, scale, num_sec):
     """Rescales the section scaling parameter for the fuselage
+    Also translates each section in the z-axis so that sections
+    are in the correct location relative to each other
 
     Parameters
     ----------
@@ -72,16 +74,23 @@ def section_transformer(tixi_handle, scale, num_sec):
     sections_xpath = '/cpacs/vehicles/aircraft/model/fuselages/\
                         fuselage/sections/'
     for i in np.arange(num_sec):
-        section_xpath = sections_xpath +\
-                        f'section[{i+1}]/transformation/scaling/'
+        scaling_xpath = sections_xpath +\
+            f'section[{i+1}]/transformation/scaling/'
+        translate_xpath = sections_xpath +\
+            f'section[{i+1}]/transformation/translation/z'
+
         # get current values
-        x_val = tixi_handle.getDoubleElement(section_xpath+'x')
-        y_val = tixi_handle.getDoubleElement(section_xpath+'y')
-        z_val = tixi_handle.getDoubleElement(section_xpath+'z')
+        x_val = tixi_handle.getDoubleElement(scaling_xpath+'x')
+        y_val = tixi_handle.getDoubleElement(scaling_xpath+'y')
+        z_val = tixi_handle.getDoubleElement(scaling_xpath+'z')
+        z_val_elem = tixi_handle.getDoubleElement(translate_xpath)
+
         # update current values
-        tixi_handle.updateDoubleElement(section_xpath+'x', x_val*scale, '%.8f')
-        tixi_handle.updateDoubleElement(section_xpath+'y', y_val*scale, '%.8f')
-        tixi_handle.updateDoubleElement(section_xpath+'z', z_val*scale, '%.8f')
+        tixi_handle.updateDoubleElement(scaling_xpath+'x', x_val*scale, '%.8f')
+        tixi_handle.updateDoubleElement(scaling_xpath+'y', y_val*scale, '%.8f')
+        tixi_handle.updateDoubleElement(scaling_xpath+'z', z_val*scale, '%.8f')
+        tixi_handle.updateDoubleElement(translate_xpath, z_val_elem*scale,
+                                        '%.8f')
 
     return tixi_handle
 

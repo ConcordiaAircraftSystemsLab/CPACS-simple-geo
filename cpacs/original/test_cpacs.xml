@@ -3434,18 +3434,6 @@
           </fuselage>
         </fuselages>
         <engines>
-          <engine uID="B777PW4090UID">
-            <name>name</name>
-            <engineUID>3PW066</engineUID>
-            <parentUID>multi_wing_1ID</parentUID>
-            <transformation uID="B777PW4090UID_transformation1">
-              <translation uID="B777PW4090UID_transformation1_translation1">
-                <x>0.0</x>
-                <y>0.0</y>
-                <z>0.0</z>
-              </translation>
-            </transformation>
-          </engine>
         </engines>
       </model>
     </aircraft>
