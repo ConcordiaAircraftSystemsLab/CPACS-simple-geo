@@ -3,9 +3,9 @@ import numpy as np
 
 from ceasiompy.utils.WB.ConvGeometry import geometry
 from ceasiompy.utils.cpacsfunctions import aircraft_name, open_tixi, close_tixi
+from tixi3 import tixi3wrapper as tixi
 
 # currently only works for fuse_length
-test
 
 def transformer(input_file, output_file='output_cpacs.xml', geometry_dict={}):
     """Transforms a CPACS aircraft geometry by rescaling individual sections
@@ -108,6 +108,26 @@ def positioning_transformer(tixi_handle, scale):
     return tixi_handle
 
 
+def fuselage_generate(aircraftname):
+    # Instantiate class and create handle for it
+    tixi_handle = tixi.Tixi3()
+    tixi.Tixi3.create(tixi_handle, rootElementName='cpacs')
+
+    # Define schema and fill in header
+    tixi_handle.declareNamespace("/cpacs", "http://www.w3.org/2001/XMLSchema-instance", "xsi");
+
+    tixi_handle.registerNamespace("http://www.w3.org/2001/XMLSchema-instance", "xsi");
+
+    tixi_handle.addTextAttribute("/cpacs", "xsi:noNamespaceSchemaLocation", "cpacs_schema.xsd");
+
+    tixi_handle.addCpacsHeader(name=aircraftname, creator='Noah Sadaka', version='N/A', description='...', cpacsVersion='3.2');
+   
+
+    # Check that CPACS file matches schema
+    tixi_handle.schemaValidateFromFile('cpacs_schema.xsd')
+    close_tixi(tixi_handle, 'cpacs/test_fuse.xml')
+
+
 # ------------------------------
 # MAIN
 # ------------------------------
@@ -116,6 +136,7 @@ if os.path.exists('cpacs/test_cpacs.xml'):
     os.remove('cpacs/test_cpacs.xml')
 os.system('cp cpacs/original/test_cpacs.xml cpacs/test_cpacs.xml')
 
-transformer(input_file='cpacs/original/test_cpacs.xml',
-            output_file='cpacs/test_cpacs.xml',
-            geometry_dict={'fuse_length': 30})
+#transformer(input_file='cpacs/original/test_cpacs.xml',
+#            output_file='cpacs/test_cpacs.xml',
+#            geometry_dict={'fuse_length': 30})
+fuselage_generate(aircraftname='test_fuselage')
