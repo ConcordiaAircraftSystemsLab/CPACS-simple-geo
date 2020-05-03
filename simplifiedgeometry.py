@@ -115,8 +115,18 @@ def cpacs_generate(aircraftname, tot_len, nose_frac=0.1, tail_frac=0.1):
     ----------
     aircraftname : str
         The name of the aircraft and filename of the output CPACS file
+    tot_len : float
+        Total length of the fuselage 
+    nose_frac : float, default = 0.1
+        Fraction of the total length that comprises the nose section
+    tail_frac : float, default = 0.1
+        Fraction of the total length that comprises the tail section
 
+    Outputs
+    -------
+    A CPACS file named aircraftname.xml
     """
+
     # Instantiate class and create handle for it
     tixi_handle = tixi.Tixi3()
     tixi.Tixi3.create(tixi_handle, rootElementName='cpacs')
@@ -138,17 +148,17 @@ def cpacs_generate(aircraftname, tot_len, nose_frac=0.1, tail_frac=0.1):
         if i == 'model':
             model_path = base_path + '/model'
             add_uid(tixi_handle, model_path, 'CPACSaircraft')
-            tixi_handle.addTextElement(model_path, 'description','...')
-            tixi_handle.addTextElement(model_path, 'name','Generated Fuselage')
+            tixi_handle.addTextElement(model_path, 'description', '...')
+            tixi_handle.addTextElement(model_path, 'name', 'Generated Fuselage')
             ref_path = model_path + '/reference'
             tixi_handle.createElement(model_path, 'reference')
             tixi_handle.addDoubleElement(ref_path, 'area', 1, '%f')
             tixi_handle.addDoubleElement(ref_path, 'length', 1, '%f')
             tixi_handle.createElement(ref_path, 'point')
             add_uid(tixi_handle, ref_path+'/point', 'fuse_point1')
-            tixi_handle.addDoubleElement(ref_path+'/point','x', 0.0, '%f')
-            tixi_handle.addDoubleElement(ref_path+'/point','y', 0.0, '%f')
-            tixi_handle.addDoubleElement(ref_path+'/point','z', 0.0, '%f')
+            tixi_handle.addDoubleElement(ref_path+'/point', 'x', 0.0, '%f')
+            tixi_handle.addDoubleElement(ref_path+'/point', 'y', 0.0, '%f')
+            tixi_handle.addDoubleElement(ref_path+'/point', 'z', 0.0, '%f')
         if i == 'fuselage':
             fuse_path = base_path + '/fuselage'
             add_uid(tixi_handle, fuse_path, 'Fuselage_1ID')
@@ -159,16 +169,25 @@ def cpacs_generate(aircraftname, tot_len, nose_frac=0.1, tail_frac=0.1):
             add_uid(tixi_handle, trans_path, 'Fuselage_1ID_transformation1')
             for j in ['rotation', 'scaling', 'translation']:
                     tixi_handle.createElement(trans_path, j)
+                    if j == 'translation':
+                        tixi_handle.addTextAttribute(f"{trans_path}/{j}", 'refType', 'absLocal')
                     base_uid = 'Fuselage_1ID_transformation1'
-                    add_uid(tixi_handle, f"{trans_path}/{j}",f"{base_uid}_{j}1")
+                    add_uid(tixi_handle, f"{trans_path}/{j}",
+                             f"{base_uid}_{j}1")
                     if j != 'scaling':
-                        tixi_handle.addIntegerElement(f"{trans_path}/{j}",'x',0, '%d') 
-                        tixi_handle.addIntegerElement(f"{trans_path}/{j}",'y',0, '%d')
-                        tixi_handle.addIntegerElement(f"{trans_path}/{j}",'z',0, '%d')
+                        tixi_handle.addIntegerElement(f"{trans_path}/{j}",
+                                                        'x', 0, '%d') 
+                        tixi_handle.addIntegerElement(f"{trans_path}/{j}",
+                                                        'y', 0, '%d')
+                        tixi_handle.addIntegerElement(f"{trans_path}/{j}",
+                                                        'z', 0, '%d')
                     else:
-                        tixi_handle.addIntegerElement(f"{trans_path}/{j}",'x',1, '%d') 
-                        tixi_handle.addIntegerElement(f"{trans_path}/{j}",'y',1, '%d')
-                        tixi_handle.addIntegerElement(f"{trans_path}/{j}",'z',1, '%d')
+                        tixi_handle.addIntegerElement(f"{trans_path}/{j}",
+                                                        'x', 1, '%d') 
+                        tixi_handle.addIntegerElement(f"{trans_path}/{j}",
+                                                        'y', 1, '%d')
+                        tixi_handle.addIntegerElement(f"{trans_path}/{j}",
+                                                        'z', 1, '%d')
         base_path += f"/{i}"
 
     # Check that CPACS file matches schema
@@ -176,7 +195,7 @@ def cpacs_generate(aircraftname, tot_len, nose_frac=0.1, tail_frac=0.1):
     close_tixi(tixi_handle, 'cpacs/test_fuse.xml')
 
 
-def add_sections(tot_len, nose_frac, tail_frac)
+def add_section(name, z-coord)
 
 
 # ------------------------------
