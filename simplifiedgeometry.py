@@ -199,6 +199,16 @@ def cpacs_generate(aircraftname, tot_len, nose_frac=0.1, tail_frac=0.1):
 
 #def build_fuselage(tixi_handle, tot_len):
 
+def add_segment(tixi_handle, name, fromUID, toUID):
+    base_path = '/cpacs/vehicles/aircraft/model/fuselages/fuselage/segments'
+    tixi_handle.createElement(base_path, 'segment')
+    base_path += '/segment'
+    add_uid(tixi_handle, base_path, f"{name}ID")
+    tixi_handle.addTextElement(base_path, 'name', name)
+    tixi_handle.addTextElement(base_path, 'fromElementUID', fromUID)
+    tixi_handle.addTextElement(base_path, 'toElementUID', toUID)
+    return tixi_handle
+
 def add_section(tixi_handle, name, profile_id, section_num):
     # Create XML infrastructure
     base_path = '/cpacs/vehicles/aircraft/model/fuselages/fuselage/sections'
