@@ -191,10 +191,48 @@ def cpacs_generate(aircraftname, tot_len, nose_frac=0.1, tail_frac=0.1):
         base_path += f"/{i}"
 
     profile_id, tixi_handle = add_circular_fuse_profile(tixi_handle)
+    tixi_handle = add_section(tixi_handle, 'test', profile_id, 1)
 
     # Check that CPACS file matches schema
     #tixi_handle.schemaValidateFromFile('cpacs_schema.xsd')
     close_tixi(tixi_handle, 'cpacs/test_fuse.xml')
+
+#def build_fuselage(tixi_handle, tot_len):
+
+def add_section(tixi_handle, name, profile_id, section_num):
+    # Create XML infrastructure
+    base_path = '/cpacs/vehicles/aircraft/model/fuselages/fuselage/sections'
+    tixi_handle.createElement(base_path, 'section')
+    base_path += '/section'
+    add_uid(tixi_handle, base_path, f"{name}section{section_num}ID")
+    tixi_handle.addTextElement(base_path, 'name', name)
+    for j in ['transformation', 'elements']:
+        tixi_handle.createElement(base_path, j)
+        xpath = f"{base_path}/{j}"
+        uid_name = f"{name}section{section_num}ID_{j}1"
+        if j == 'elements':
+            tixi_handle.createElement(xpath, 'element')
+            xpath += '/element'
+            uid_name = f"{name}section{section_num}ID_element1ID" 
+        add_uid(tixi_handle, base_path, uid_name)
+        for i in ['rotation', 'scaling', 'translation']:
+            tixi_handle.createElement(xpath, i)
+            if i == 'translation':
+                tixi_handle.addTextAttribute(f"{xpath}/{i}", 'refType', 'absLocal')
+            add_uid(tixi_handle, f"{xpath}/{i}", f"{uid_name}_{i}1")
+            if i != 'scaling':
+                tixi_handle.addIntegerElement(f"{xpath}/{i}", 'x', 0, '%d') 
+                tixi_handle.addIntegerElement(f"{xpath}/{i}", 'y', 0, '%d')
+                tixi_handle.addIntegerElement(f"{xpath}/{i}", 'z', 0, '%d')
+            else:
+                tixi_handle.addIntegerElement(f"{xpath}/{i}", 'x', 1, '%d') 
+                tixi_handle.addIntegerElement(f"{xpath}/{i}", 'y', 1, '%d')
+                tixi_handle.addIntegerElement(f"{xpath}/{i}", 'z', 1, '%d')
+
+    return tixi_handle
+
+
+
 
 def add_circular_fuse_profile(tixi_handle):
     """Adds a circular profile to the CPACS file
@@ -237,7 +275,6 @@ def add_circular_fuse_profile(tixi_handle):
 
 
 
-#def add_section(name, z-coord, profile_id)
 
 
 # ------------------------------
