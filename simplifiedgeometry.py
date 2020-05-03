@@ -210,6 +210,25 @@ def add_segment(tixi_handle, name, fromUID, toUID):
     return tixi_handle
 
 def add_section(tixi_handle, name, profile_id, section_num):
+    """ Internal function, add section to CPACS file
+
+    Parameters
+    ----------
+    tixi_handle : tixi handle object
+        A tixi handle to the cpacs file to be created
+    name : str
+        section name, used to generate a UID
+    profile_id : str
+        profile ID used for this section
+    section_num : int
+        number corresponding to which section this is
+
+    Returns
+    -------
+    tixi_handle : tixi handle object
+
+    """
+
     # Create XML infrastructure
     base_path = '/cpacs/vehicles/aircraft/model/fuselages/fuselage/sections'
     tixi_handle.createElement(base_path, 'section')
@@ -224,7 +243,13 @@ def add_section(tixi_handle, name, profile_id, section_num):
             tixi_handle.createElement(xpath, 'element')
             xpath += '/element'
             uid_name = f"{name}section{section_num}ID_element1ID" 
-        add_uid(tixi_handle, base_path, uid_name)
+            add_uid(tixi_handle, xpath, uid_name)
+            tixi_handle.addTextElement(xpath, 'name', f"{name}section{section_num}element1")
+            tixi_handle.addTextElement(xpath, 'profileUID', profile_id)
+            tixi_handle.createElement(xpath, 'transformation')
+            xpath += '/transformation'
+            uid_name = f"{uid_name}_transformation1"
+        add_uid(tixi_handle, xpath, uid_name)
         for i in ['rotation', 'scaling', 'translation']:
             tixi_handle.createElement(xpath, i)
             if i == 'translation':
