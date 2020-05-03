@@ -189,6 +189,11 @@ def cpacs_generate(aircraftname, tot_len, nose_frac=0.1, tail_frac=0.1):
                         tixi_handle.addIntegerElement(f"{trans_path}/{j}",
                                                         'z', 1, '%d')
         base_path += f"/{i}"
+        profile_id, tixi_handle = add_circular_fuse_profile(tixi_handle)
+
+
+        tixi_handle = add_section(tixi_handle, 'test', profile_id, 1) 
+        #tixi_handle = build_fuselage(tixi_handle, tot_len, nose_frac, tail_frac, 'Fuselagess')
 
     # Check that CPACS file matches schema
     #tixi_handle.schemaValidateFromFile('cpacs_schema.xsd')
@@ -196,14 +201,20 @@ def cpacs_generate(aircraftname, tot_len, nose_frac=0.1, tail_frac=0.1):
 
 def build_fuselage(tixi_handle, tot_len, nose_frac, tail_frac, name):
 
-    # generate profile
-    tixi_handle = add_circular_fuse_profile(tixi_handle)
+    profile_id, tixi_handle = add_circular_fuse_profile(tixi_handle)
+
+    #for i in range(1, 5):
+    section_uid, tixi_handle = add_section(tixi_handle, name, profile_id, 1)  
+
+
+    # create loop for number of sections (4)
+    
 
 
 
     return tixi_handle
 
-def add_positioning(tixi_handle, length, section_uid, pos_num):
+def add_positioning(tixi_handle, length, to_section_uid, from_section_id, pos_num):
     base_path = '/cpacs/vehicles/aircraft/model/fuselages/fuselage'
     tixi_handle.createElement(base_path, 'positionings')
     base_path += 'positionings'
@@ -213,9 +224,9 @@ def add_positioning(tixi_handle, length, section_uid, pos_num):
     tixi_handle.addTextElement(base_path, 'name', f"{name}_positioning{pos_num}")
     tixi_handle.addDoubleElement(base_path, 'dihedralAngle', -1, '%g')
     tixi_handle.addDoubleElement(base_path, 'sweepAngle', 90, '%g')
-    tixi_handle.addTextElement(base_path, 'toSectionUID', section_uid)
+    tixi_handle.addTextElement(base_path, 'toSectionUID', to_section_uid)
     tixi_handle.addDoubleElement(base_path, 'length', length, '%g')
-    
+    tixi_handle.addTextElement(base_path, 'fromSectionUID', from_section_uid)
     return tixi_handle
 
 def add_segment(tixi_handle, name, fromUID, toUID):
@@ -251,7 +262,7 @@ def add_section(tixi_handle, name, profile_id, section_num):
 
     # Create XML infrastructure
     base_path = '/cpacs/vehicles/aircraft/model/fuselages/fuselage/sections'
-    tixi_handle.createElement(base_path, "section")
+    tixi_handle.createElement(base_path, 'section')
     base_path += f'/section[{section_num}]'
     section_uid = f"{name}section{section_num}ID"
     add_uid(tixi_handle, base_path, section_uid)
@@ -286,8 +297,6 @@ def add_section(tixi_handle, name, profile_id, section_num):
                 tixi_handle.addIntegerElement(f"{xpath}/{i}", 'z', 1, '%d')
 
     return section_uid, tixi_handle
-
-
 
 
 def add_circular_fuse_profile(tixi_handle):
