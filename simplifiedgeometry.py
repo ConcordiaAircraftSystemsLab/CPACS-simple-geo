@@ -2,7 +2,7 @@ import os
 import numpy as np
 
 from ceasiompy.utils.WB.ConvGeometry import geometry
-from ceasiompy.utils.cpacsfunctions import aircraft_name, open_tixi, close_tixi
+from ceasiompy.utils.cpacsfunctions import aircraft_name, open_tixi, close_tixi, add_uid
 from tixi3 import tixi3wrapper as tixi
 
 # currently only works for fuse_length
@@ -108,7 +108,15 @@ def positioning_transformer(tixi_handle, scale):
     return tixi_handle
 
 
-def fuselage_generate(aircraftname):
+def cpacs_generate(aircraftname, tot_len, nose_frac=0.1, tail_frac=0.1):
+    """Generates a new CPACS file with a fuselage defined in it
+
+    Parameters
+    ----------
+    aircraftname : str
+        The name of the aircraft and filename of the output CPACS file
+
+    """
     # Instantiate class and create handle for it
     tixi_handle = tixi.Tixi3()
     tixi.Tixi3.create(tixi_handle, rootElementName='cpacs')
@@ -121,11 +129,54 @@ def fuselage_generate(aircraftname):
     tixi_handle.addTextAttribute("/cpacs", "xsi:noNamespaceSchemaLocation", "cpacs_schema.xsd");
 
     tixi_handle.addCpacsHeader(name=aircraftname, creator='Noah Sadaka', version='N/A', description='...', cpacsVersion='3.2');
-   
+
+    # Create XML elements down to sections
+    path_elements = ['vehicles', 'aircraft', 'model', 'fuselages', 'fuselage', 'sections']
+    base_path = '/cpacs'
+    for i in path_elements:
+        tixi_handle.createElement(base_path, i)
+        if i == 'model':
+            model_path = base_path + '/model'
+            add_uid(tixi_handle, model_path, 'CPACSaircraft')
+            tixi_handle.addTextElement(model_path, 'description','...')
+            tixi_handle.addTextElement(model_path, 'name','Generated Fuselage')
+            ref_path = model_path + '/reference'
+            tixi_handle.createElement(model_path, 'reference')
+            tixi_handle.addDoubleElement(ref_path, 'area', 1, '%f')
+            tixi_handle.addDoubleElement(ref_path, 'length', 1, '%f')
+            tixi_handle.createElement(ref_path, 'point')
+            add_uid(tixi_handle, ref_path+'/point', 'fuse_point1')
+            tixi_handle.addDoubleElement(ref_path+'/point','x', 0.0, '%f')
+            tixi_handle.addDoubleElement(ref_path+'/point','y', 0.0, '%f')
+            tixi_handle.addDoubleElement(ref_path+'/point','z', 0.0, '%f')
+        if i == 'fuselage':
+            fuse_path = base_path + '/fuselage'
+            add_uid(tixi_handle, fuse_path, 'Fuselage_1ID')
+            tixi_handle.addTextElement(fuse_path, 'description', 'Generic Fuselage')
+            tixi_handle.addTextElement(fuse_path, 'name', 'fuselage_1')
+            tixi_handle.createElement(fuse_path, 'transformation')
+            trans_path = fuse_path + '/transformation'
+            add_uid(tixi_handle, trans_path, 'Fuselage_1ID_transformation1')
+            for j in ['rotation', 'scaling', 'translation']:
+                    tixi_handle.createElement(trans_path, j)
+                    base_uid = 'Fuselage_1ID_transformation1'
+                    add_uid(tixi_handle, f"{trans_path}/{j}",f"{base_uid}_{j}1")
+                    if j != 'scaling':
+                        tixi_handle.addIntegerElement(f"{trans_path}/{j}",'x',0, '%d') 
+                        tixi_handle.addIntegerElement(f"{trans_path}/{j}",'y',0, '%d')
+                        tixi_handle.addIntegerElement(f"{trans_path}/{j}",'z',0, '%d')
+                    else:
+                        tixi_handle.addIntegerElement(f"{trans_path}/{j}",'x',1, '%d') 
+                        tixi_handle.addIntegerElement(f"{trans_path}/{j}",'y',1, '%d')
+                        tixi_handle.addIntegerElement(f"{trans_path}/{j}",'z',1, '%d')
+        base_path += f"/{i}"
 
     # Check that CPACS file matches schema
-    tixi_handle.schemaValidateFromFile('cpacs_schema.xsd')
+    #tixi_handle.schemaValidateFromFile('cpacs_schema.xsd')
     close_tixi(tixi_handle, 'cpacs/test_fuse.xml')
+
+
+def add_sections(tot_len, nose_frac, tail_frac)
 
 
 # ------------------------------
@@ -139,4 +190,4 @@ os.system('cp cpacs/original/test_cpacs.xml cpacs/test_cpacs.xml')
 #transformer(input_file='cpacs/original/test_cpacs.xml',
 #            output_file='cpacs/test_cpacs.xml',
 #            geometry_dict={'fuse_length': 30})
-fuselage_generate(aircraftname='test_fuselage')
+cpacs_generate(aircraftname='test_fuselage', tot_len=10, nose_frac=0.1, tail_frac=0.1)
