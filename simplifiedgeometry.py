@@ -190,14 +190,33 @@ def cpacs_generate(aircraftname, tot_len, nose_frac=0.1, tail_frac=0.1):
                                                         'z', 1, '%d')
         base_path += f"/{i}"
 
-    profile_id, tixi_handle = add_circular_fuse_profile(tixi_handle)
-    tixi_handle = add_section(tixi_handle, 'test', profile_id, 1)
-
     # Check that CPACS file matches schema
     #tixi_handle.schemaValidateFromFile('cpacs_schema.xsd')
     close_tixi(tixi_handle, 'cpacs/test_fuse.xml')
 
-#def build_fuselage(tixi_handle, tot_len):
+def build_fuselage(tixi_handle, tot_len, nose_frac, tail_frac, name):
+
+    # generate profile
+    tixi_handle = add_circular_fuse_profile(tixi_handle)
+
+
+
+    return tixi_handle
+
+def add_positioning(tixi_handle, length, section_uid, pos_num):
+    base_path = '/cpacs/vehicles/aircraft/model/fuselages/fuselage'
+    tixi_handle.createElement(base_path, 'positionings')
+    base_path += 'positionings'
+    tixi_handle.createElement(base_path, 'positioning')
+    base_path += 'positioning[{pos_num}]'
+    add_uid(tixi_handle, base_path, f"{name}_positioning{pos_num}ID")
+    tixi_handle.addTextElement(base_path, 'name', f"{name}_positioning{pos_num}")
+    tixi_handle.addDoubleElement(base_path, 'dihedralAngle', -1, '%g')
+    tixi_handle.addDoubleElement(base_path, 'sweepAngle', 90, '%g')
+    tixi_handle.addTextElement(base_path, 'toSectionUID', section_uid)
+    tixi_handle.addDoubleElement(base_path, 'length', length, '%g')
+    
+    return tixi_handle
 
 def add_segment(tixi_handle, name, fromUID, toUID):
     base_path = '/cpacs/vehicles/aircraft/model/fuselages/fuselage/segments'
@@ -226,14 +245,16 @@ def add_section(tixi_handle, name, profile_id, section_num):
     Returns
     -------
     tixi_handle : tixi handle object
-
+    section_uid : str
+        section UID
     """
 
     # Create XML infrastructure
     base_path = '/cpacs/vehicles/aircraft/model/fuselages/fuselage/sections'
-    tixi_handle.createElement(base_path, 'section')
-    base_path += '/section'
-    add_uid(tixi_handle, base_path, f"{name}section{section_num}ID")
+    tixi_handle.createElement(base_path, "section")
+    base_path += f'/section[{section_num}]'
+    section_uid = f"{name}section{section_num}ID"
+    add_uid(tixi_handle, base_path, section_uid)
     tixi_handle.addTextElement(base_path, 'name', name)
     for j in ['transformation', 'elements']:
         tixi_handle.createElement(base_path, j)
@@ -264,7 +285,7 @@ def add_section(tixi_handle, name, profile_id, section_num):
                 tixi_handle.addIntegerElement(f"{xpath}/{i}", 'y', 1, '%d')
                 tixi_handle.addIntegerElement(f"{xpath}/{i}", 'z', 1, '%d')
 
-    return tixi_handle
+    return section_uid, tixi_handle
 
 
 
