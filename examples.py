@@ -27,16 +27,17 @@ transformer(cpacs_in, cpacs_out, geometry_dict={'fuse_length': fuse_length_out})
 # Fuselage and CPACS file creator
 # -------------------------------
 
-# name of the outputfile
-out_name = 'cpacs_generate_test'
+# name of the outputfile. Placed in '/cpacs', so full path will be
+# /cpacs/aircraftname
+aircraftname = 'cpacs_generate_test'
 # total length of the fuselage
-fuse_length = 20
+tot_len = 20
 # Optionally, define what fraction of the fuselage length
 # is made up by the nose and tail sections
 # by default, these are both set to 0.1
-nose_f = 0.2
-tail_f = 0.05
+nose_frac = 0.2
+tail_frac = 0.05
 # generate the fuselage
-cpacs_generate(aircraftname=out_name, tot_len=fuse_length, nose_frac=nose_f, tail_frac=tail_f)
+cpacs_generate(aircraftname, tot_len, nose_frac, tail_frac)
 
 # done!
