@@ -195,10 +195,12 @@ def cpacs_generate(aircraftname, tot_len, nose_frac=0.1, tail_frac=0.1):
     tixi_handle.createElement('/cpacs/vehicles/aircraft/model/fuselages/fuselage', 'positionings')
     tixi_handle.createElement('/cpacs/vehicles/aircraft/model/fuselages/fuselage', 'segments')
 
+    # Create fuselage
     tixi_handle = build_fuselage(tixi_handle, tot_len, nose_frac, tail_frac, 'Fuselage')
 
     # Check that CPACS file matches schema
     tixi_handle.schemaValidateFromFile('cpacs_schema.xsd')
+
     close_tixi(tixi_handle, 'cpacs/test_fuse.xml')
 
 
@@ -231,14 +233,15 @@ def build_fuselage(tixi_handle, tot_len, nose_frac, tail_frac, name):
     main_len = tot_len - nose_len - tail_len
     pos_len_vec = [0, nose_len, main_len, tail_len]
     for i in range(1, 5):
-        section_uid, tixi_handle = add_section(tixi_handle, name, profile_id, i)
+        section_uid, element_uid, tixi_handle = add_section(tixi_handle, name, profile_id, i)
         if i > 1:
-            tixi_handle = add_segment(tixi_handle, name, previous_section, section_uid, i-1)
+            tixi_handle = add_segment(tixi_handle, name, previous_element, element_uid, i-1)
         if i == 1:
             tixi_handle = add_positioning(tixi_handle, name, pos_len_vec[i-1], section_uid, '', i)
         else:
             tixi_handle = add_positioning(tixi_handle, name, pos_len_vec[i-1], section_uid, previous_section, i)
         previous_section = section_uid
+        previous_element = element_uid
 
     return tixi_handle
 
@@ -290,9 +293,9 @@ def add_segment(tixi_handle, name, fromUID, toUID, num):
     name : str
         section name, used to generate a UID
     from_UID : str
-        uid of section at start of section
+        uid of element at start of section
     to_UID : str
-        uid of section at end of segment
+        uid of element at end of segment
     num : int
         number corresponding to segment index
 
@@ -330,6 +333,9 @@ def add_section(tixi_handle, name, profile_id, section_num):
     tixi_handle : tixi handle object
     section_uid : str
         section UID
+    element_uid : str
+        element UID
+
     """
 
     # Create XML infrastructure
@@ -347,6 +353,7 @@ def add_section(tixi_handle, name, profile_id, section_num):
             tixi_handle.createElement(xpath, 'element')
             xpath += '/element'
             uid_name = f"{name}section{section_num}ID_element1ID"
+            element_uid = uid_name
             add_uid(tixi_handle, xpath, uid_name)
             tixi_handle.addTextElement(xpath, 'name', f"{name}section{section_num}element1")
             tixi_handle.addTextElement(xpath, 'profileUID', profile_id)
@@ -368,7 +375,7 @@ def add_section(tixi_handle, name, profile_id, section_num):
                 tixi_handle.addIntegerElement(f"{xpath}/{i}", 'y', 1, '%d')
                 tixi_handle.addIntegerElement(f"{xpath}/{i}", 'z', 1, '%d')
 
-    return section_uid, tixi_handle
+    return section_uid, element_uid, tixi_handle
 
 
 def add_circular_fuse_profile(tixi_handle):
