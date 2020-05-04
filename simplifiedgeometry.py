@@ -132,6 +132,20 @@ def cpacs_generate(aircraftname, tot_len, nose_frac=0.1, tail_frac=0.1):
     tixi_handle = tixi.Tixi3()
     tixi.Tixi3.create(tixi_handle, rootElementName='cpacs')
 
+    # Generate CPACS XML tag structure
+    tixi_handle = generate_cpacs_structure(tixi_handle, aircraftname)
+
+    # Create fuselage
+    tixi_handle = build_fuselage(tixi_handle, tot_len, nose_frac, tail_frac,
+                                    'Fuselage')
+
+    # Check that CPACS file matches schema
+    tixi_handle.schemaValidateFromFile('cpacs_schema.xsd')
+
+    close_tixi(tixi_handle, 'cpacs/test_fuse.xml')
+
+
+def generate_cpacs_structure(tixi_handle, aircraftname):
     # Define schema and fill in header
     tixi_handle.declareNamespace("/cpacs", "http://www.w3.org/2001/XMLSchema-instance", "xsi")
 
@@ -142,7 +156,8 @@ def cpacs_generate(aircraftname, tot_len, nose_frac=0.1, tail_frac=0.1):
     tixi_handle.addCpacsHeader(name=aircraftname, creator='Noah Sadaka', version='N/A', description='...', cpacsVersion='3.2')
 
     # Create XML elements down to sections
-    path_elements = ['vehicles', 'aircraft', 'model', 'fuselages', 'fuselage', 'sections']
+    path_elements = ['vehicles', 'aircraft', 'model', 'fuselages',
+                        'fuselage', 'sections']
     base_path = '/cpacs'
     for i in path_elements:
         tixi_handle.createElement(base_path, i)
@@ -195,13 +210,9 @@ def cpacs_generate(aircraftname, tot_len, nose_frac=0.1, tail_frac=0.1):
     tixi_handle.createElement('/cpacs/vehicles/aircraft/model/fuselages/fuselage', 'positionings')
     tixi_handle.createElement('/cpacs/vehicles/aircraft/model/fuselages/fuselage', 'segments')
 
-    # Create fuselage
-    tixi_handle = build_fuselage(tixi_handle, tot_len, nose_frac, tail_frac, 'Fuselage')
+    return tixi_handle
 
-    # Check that CPACS file matches schema
-    tixi_handle.schemaValidateFromFile('cpacs_schema.xsd')
 
-    close_tixi(tixi_handle, 'cpacs/test_fuse.xml')
 
 
 def build_fuselage(tixi_handle, tot_len, nose_frac, tail_frac, name):
