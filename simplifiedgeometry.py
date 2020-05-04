@@ -144,7 +144,7 @@ def cpacs_generate(aircraftname, tot_len, nose_frac=0.1, tail_frac=0.1):
     # Check that CPACS file matches schema
     tixi_handle.schemaValidateFromFile('cpacs_schema.xsd')
 
-    close_tixi(tixi_handle, 'cpacs/test_fuse.xml')
+    close_tixi(tixi_handle, f"cpacs/{aircraftname}.xml")
 
 
 def generate_cpacs_structure(tixi_handle, aircraftname):
