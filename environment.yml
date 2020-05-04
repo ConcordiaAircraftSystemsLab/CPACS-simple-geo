@@ -1,0 +1,86 @@
+# This file lists external packages required to run and develop CEASIOMpy.
+#
+# * Only top-level requirements are listed here.
+# * You can use this file to set up a Conda environment:
+#
+#       conda env create -f environment.yml
+#
+# See also: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
+
+name: ceasiompy-lab
+
+channels:
+  - dlr-sc  # See: https://anaconda.org/DLR-SC/repo
+  - conda-forge
+  - defaults
+
+# List all explicitly imported/used packages
+# ------------------------------------------
+#
+# Example -- Consider a Python file with following imports:
+#
+#   import package_A
+#   import package_B
+#
+# Assume:
+#
+# ==> 'package_A' depends on 'package_B'
+# ==> 'package_B' depends on a third 'package_C'
+#
+# 'package_A' and 'package_B' should be listed in this file since they
+# are explicitly imported, but we do not list 'package_C'.
+
+dependencies:
+  - python>=3.6
+
+  # Required
+  - numpy>=1.15
+  - cpacscreator>=0.1
+  #- tigl3>=3.0.0rc  # Should be included in cpacscreator
+  - tixi3>=3.0.3
+  - matplotlib>=3.0.2
+  - scipy>=1.1
+  - scikit-learn>=0.21.3
+  - pandas>=0.25.0
+  - vtk>=8.2.0
+  - xmltodict>=0.12.0
+  - openmdao >=2.9.1
+
+  # Testing
+  - flake8
+  - pytest>=5.0.1
+  - pytest-cov
+  - codecov==2.0.15
+
+  # Documentation
+  - sphinx=1.8.5
+
+  # To compile PyTornado on Mac
+  - clang>=4.0.1
+
+  # Misc
+  - pip
+
+  - pip:
+    - sphinx-rtd-theme==0.4.3
+    - aeroframe  # See: https://github.com/airinnova/aeroframe
+    - framat  # See: https://github.com/airinnova/framat
+
+# Other packages
+# ==============
+#
+# PyTornado (automated installation from PyPi or Conda is not yet available)
+# https://github.com/airinnova/pytornado
+#   - pytornado>=0.5.0
+#
+# ------------------------------
+#
+# SU2
+# https://github.com/su2code/SU2
+#
+# ------------------------------
+#
+# RCE
+# https://rcenvironment.de/
+#
+# ------------------------------
