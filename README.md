@@ -2,6 +2,8 @@
 
 Resize the aircraft geometry using simple geometrical parameters (fuselage length, wing span, wing area, etc...). Input a [CPACS file](https://www.cpacs.de/) and use the simple geometrical parameter to resize it while all aircraft sections keep their relative sizes.
 
+Also can create a new CPACS file containing only a fuselage that has had the length defined.
+
 ## Installation
 
 Has the same requirements as [CEASIOMpy](https://ceasiompy.readthedocs.io/en/latest/), so if it is already installed on your machine, this tool will work.
@@ -10,7 +12,11 @@ TODO: add a requirements.txt or environment.yml file for easy installation
 
 ## Usage
 
-TODO: add documentation once the tool has been created
+Refer to the examples.py file for examples of how to use the functions
+
+## Future Development
+
+Currently, only works for fuselage length. Would be useful to also be able to create and resize fuselages based on the width, and also to allow for the resizing and creation of wings.
 
 ## Developer's Guide
 This section is to aid those developing this tool in the future.
