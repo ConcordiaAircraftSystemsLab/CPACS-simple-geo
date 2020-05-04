@@ -262,14 +262,25 @@ def build_fuselage(tixi_handle, tot_len, nose_frac, tail_frac, name):
 
     profile_id, tixi_handle = add_circular_fuse_profile(tixi_handle)
 
-    previous_section = ''
+    # Create lengths of each section
     nose_len = nose_frac * tot_len
     tail_len = tail_frac * tot_len
     main_len = tot_len - nose_len - tail_len
-    pos_len_vec = [0, nose_len, main_len, tail_len]
-    for i in range(1, 5):
-        if i == 1:
-            section_uid, element_uid, tixi_handle = add_nose_section(tixi_handle, name, profile_id, i)
+    num_sections = 6
+    pos_len_vec = []
+    pos_len_vec.append(0)
+    pos_len_vec.append(nose_len)
+    num_middle_sections = num_sections - 2
+    len_middle_sections = main_len / num_middle_sections
+    for i in range(num_middle_sections-1):
+        pos_len_vec.append(len_middle_sections)
+    pos_len_vec.append(tail_len)
+    print(pos_len_vec)
+        
+    #pos_len_vec = [0, nose_len, main_len, tail_len]
+    for i in range(1, num_sections+1):
+        if i == 1 or i == num_sections:
+            section_uid, element_uid, tixi_handle = add_end_section(tixi_handle, name, profile_id, i)
         else:
             section_uid, element_uid, tixi_handle = add_section(tixi_handle, name, profile_id, i)
         if i > 1:
@@ -416,7 +427,7 @@ def add_section(tixi_handle, name, profile_id, section_num):
     return section_uid, element_uid, tixi_handle
 
 
-def add_nose_section(tixi_handle, name, profile_id, section_num):
+def add_end_section(tixi_handle, name, profile_id, section_num):
     """ Internal function, add nose section to CPACS file
 
     Parameters
