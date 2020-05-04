@@ -201,7 +201,27 @@ def cpacs_generate(aircraftname, tot_len, nose_frac=0.1, tail_frac=0.1):
     tixi_handle.schemaValidateFromFile('cpacs_schema.xsd')
     close_tixi(tixi_handle, 'cpacs/test_fuse.xml')
 
+
 def build_fuselage(tixi_handle, tot_len, nose_frac, tail_frac, name):
+    """ Internal function, generate fuselage geometry
+
+    Parameters
+    ----------
+    tixi_handle : tixi handle object
+        A tixi handle to the cpacs file to be created
+    tot_len : float
+        Total length of the fuselage 
+    nose_frac : float, default = 0.1
+        Fraction of the total length that comprises the nose section
+    tail_frac : float, default = 0.1
+        Fraction of the total length that comprises the tail section
+    name : str
+        section name, used to generate a UID
+
+    Returns
+    -------
+    tixi_handle : tixi handle object
+    """
 
     profile_id, tixi_handle = add_circular_fuse_profile(tixi_handle)
     
@@ -222,7 +242,30 @@ def build_fuselage(tixi_handle, tot_len, nose_frac, tail_frac, name):
 
     return tixi_handle
 
+
 def add_positioning(tixi_handle, name, length, to_section_uid, from_section_uid, pos_num):
+    """ Internal function, add positionings to CPACS file
+
+    Parameters
+    ----------
+    tixi_handle : tixi handle object
+        A tixi handle to the cpacs file to be created
+    name : str
+        section name, used to generate a UID
+    length : float
+        length of segment
+    to_section_uid : str
+        uid of section at end of segment
+    from_section_uid : str
+        uid of section at start of section
+    pos_num : int
+        number corresponding to positioning index
+
+    Returns
+    -------
+    tixi_handle : tixi handle object
+    """
+
     base_path = '/cpacs/vehicles/aircraft/model/fuselages/fuselage/positionings'
     tixi_handle.createElement(base_path, 'positioning')
     base_path += f"/positioning[{pos_num}]"
@@ -236,7 +279,27 @@ def add_positioning(tixi_handle, name, length, to_section_uid, from_section_uid,
         tixi_handle.addTextElement(base_path, 'fromSectionUID', from_section_uid)
     return tixi_handle
 
+
 def add_segment(tixi_handle, name, fromUID, toUID, num):
+    """ Internal function, add segments to CPACS file
+
+    Parameters
+    ----------
+    tixi_handle : tixi handle object
+        A tixi handle to the cpacs file to be created
+    name : str
+        section name, used to generate a UID
+    from_UID : str
+        uid of section at start of section
+    to_UID : str
+        uid of section at end of segment
+    num : int
+        number corresponding to segment index
+
+    Returns
+    -------
+    tixi_handle : tixi handle object
+    """
     base_path = '/cpacs/vehicles/aircraft/model/fuselages/fuselage/segments'
     tixi_handle.createElement(base_path, 'segment')
     base_path += f"/segment[{num}]"
@@ -246,6 +309,7 @@ def add_segment(tixi_handle, name, fromUID, toUID, num):
     tixi_handle.addTextElement(base_path, 'fromElementUID', fromUID)
     tixi_handle.addTextElement(base_path, 'toElementUID', toUID)
     return tixi_handle
+
 
 def add_section(tixi_handle, name, profile_id, section_num):
     """ Internal function, add section to CPACS file
