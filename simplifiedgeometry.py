@@ -82,7 +82,7 @@ def section_transformer(tixi_handle, scale, num_sec):
 
 
 def positioning_transformer(tixi_handle, scale):
-    """Internal function. 
+    """Internal function.
     Rescales the length of each fuselage segment
 
     Parameters
@@ -163,17 +163,17 @@ def generate_cpacs_structure(tixi_handle, aircraftname):
     tixi_handle : a tixi handle object
     """
     # Define schema and fill in header
-    tixi_handle.declareNamespace("/cpacs", 
+    tixi_handle.declareNamespace("/cpacs",
             "http://www.w3.org/2001/XMLSchema-instance", "xsi")
 
     tixi_handle.registerNamespace("http://www.w3.org/2001/XMLSchema-instance"
                                     , "xsi")
 
-    tixi_handle.addTextAttribute("/cpacs", "xsi:noNamespaceSchemaLocation", 
+    tixi_handle.addTextAttribute("/cpacs", "xsi:noNamespaceSchemaLocation",
                                     "cpacs_schema.xsd")
 
-    tixi_handle.addCpacsHeader(name=aircraftname, creator='Noah Sadaka', 
-                                version='N/A', description='...', 
+    tixi_handle.addCpacsHeader(name=aircraftname, creator='Noah Sadaka',
+                                version='N/A', description='...',
                                 cpacsVersion='3.2')
 
     # Create XML elements down to sections
@@ -186,7 +186,7 @@ def generate_cpacs_structure(tixi_handle, aircraftname):
             model_path = base_path + '/model'
             add_uid(tixi_handle, model_path, 'CPACSaircraft')
             tixi_handle.addTextElement(model_path, 'description', '...')
-            tixi_handle.addTextElement(model_path, 'name', 
+            tixi_handle.addTextElement(model_path, 'name',
                     'Generated Fuselage')
             ref_path = model_path + '/reference'
             tixi_handle.createElement(model_path, 'reference')
@@ -209,7 +209,7 @@ def generate_cpacs_structure(tixi_handle, aircraftname):
             for j in ['rotation', 'scaling', 'translation']:
                     tixi_handle.createElement(trans_path, j)
                     if j == 'translation':
-                        tixi_handle.addTextAttribute(f"{trans_path}/{j}", 
+                        tixi_handle.addTextAttribute(f"{trans_path}/{j}",
                                 'refType', 'absLocal')
                     base_uid = 'Fuselage_1ID_transformation1'
                     add_uid(tixi_handle, f"{trans_path}/{j}",
@@ -275,9 +275,7 @@ def build_fuselage(tixi_handle, tot_len, nose_frac, tail_frac, name):
     for i in range(num_middle_sections-1):
         pos_len_vec.append(len_middle_sections)
     pos_len_vec.append(tail_len)
-    print(pos_len_vec)
-        
-    #pos_len_vec = [0, nose_len, main_len, tail_len]
+
     for i in range(1, num_sections+1):
         if i == 1 or i == num_sections:
             section_uid, element_uid, tixi_handle = add_end_section(tixi_handle, name, profile_id, i)
