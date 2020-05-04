@@ -8,8 +8,12 @@ Also can create a new CPACS file containing only a fuselage that has had the len
 
 Has the same requirements as [CEASIOMpy](https://ceasiompy.readthedocs.io/en/latest/), so if it is already installed on your machine, this tool will work.
 
-TODO: add a requirements.txt or environment.yml file for easy installation
+If not, the environment.yml file in this is the same as in CEASIOMpy. Download this GitHub repo either by cloning it using GitHub Desktop or with the ``git clone`` command in a terminal, or by downloading from the GitHub repo page (this one, top right corner, green button that says "Clone or download". 
 
+Next, open an Anaconda Prompt, change directories to where you downloaded this repository on your computer, and type ``conda env create -f environment.yml``
+
+Now, to use this module anywhere on your computer, you must add it to your pythonpath so that your computer knows where to find this module when you are not in its directory. [CEASIOMpy's instructions here](https://ceasiompy.readthedocs.io/en/latest/user_guide/installation.html#setting-up-your-path-variables) gives instructions for how to do this.
+ 
 ## Usage
 
 Refer to the examples.py file for examples of how to use the functions

@@ -7,7 +7,6 @@ from tixi3 import tixi3wrapper as tixi
 
 # currently only works for fuse_length
 
-
 def transformer(input_file, output_file='output_cpacs.xml', geometry_dict={}):
     """Transforms a CPACS aircraft geometry by rescaling individual sections
 
@@ -235,8 +234,6 @@ def generate_cpacs_structure(tixi_handle, aircraftname):
     tixi_handle.createElement('/cpacs/vehicles/aircraft/model/fuselages/fuselage', 'segments')
 
     return tixi_handle
-
-
 
 
 def build_fuselage(tixi_handle, tot_len, nose_frac, tail_frac, name):
