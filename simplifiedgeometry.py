@@ -268,7 +268,10 @@ def build_fuselage(tixi_handle, tot_len, nose_frac, tail_frac, name):
     main_len = tot_len - nose_len - tail_len
     pos_len_vec = [0, nose_len, main_len, tail_len]
     for i in range(1, 5):
-        section_uid, element_uid, tixi_handle = add_section(tixi_handle, name, profile_id, i)
+        if i == 1:
+            section_uid, element_uid, tixi_handle = add_nose_section(tixi_handle, name, profile_id, i)
+        else:
+            section_uid, element_uid, tixi_handle = add_section(tixi_handle, name, profile_id, i)
         if i > 1:
             tixi_handle = add_segment(tixi_handle, name, previous_element, element_uid, i-1)
         if i == 1:
@@ -413,8 +416,79 @@ def add_section(tixi_handle, name, profile_id, section_num):
     return section_uid, element_uid, tixi_handle
 
 
+def add_nose_section(tixi_handle, name, profile_id, section_num):
+    """ Internal function, add nose section to CPACS file
+
+    Parameters
+    ----------
+    tixi_handle : tixi handle object
+        A tixi handle to the cpacs file to be created
+    name : str
+        section name, used to generate a UID
+    profile_id : str
+        profile ID used for this section
+    section_num : int
+        number corresponding to which section this is
+
+    Returns
+    -------
+    tixi_handle : tixi handle object
+    section_uid : str
+        section UID
+    element_uid : str
+        element UID
+
+    """
+
+    # Create XML infrastructure
+    base_path = '/cpacs/vehicles/aircraft/model/fuselages/fuselage/sections'
+    tixi_handle.createElement(base_path, 'section')
+    base_path += f'/section[{section_num}]'
+    section_uid = f"{name}_section{section_num}ID"
+    add_uid(tixi_handle, base_path, section_uid)
+    tixi_handle.addTextElement(base_path, 'name', name)
+    for j in ['transformation', 'elements']:
+        tixi_handle.createElement(base_path, j)
+        xpath = f"{base_path}/{j}"
+        uid_name = f"{name}section{section_num}ID_{j}1"
+        if j == 'elements':
+            tixi_handle.createElement(xpath, 'element')
+            xpath += '/element'
+            uid_name = f"{name}section{section_num}ID_element1ID"
+            element_uid = uid_name
+            add_uid(tixi_handle, xpath, uid_name)
+            tixi_handle.addTextElement(xpath, 'name', f"{name}section{section_num}element1")
+            tixi_handle.addTextElement(xpath, 'profileUID', profile_id)
+            tixi_handle.createElement(xpath, 'transformation')
+            xpath += '/transformation'
+            uid_name = f"{uid_name}_transformation1"
+        add_uid(tixi_handle, xpath, uid_name)
+        for i in ['rotation', 'scaling', 'translation']:
+            tixi_handle.createElement(xpath, i)
+            if i == 'translation':
+                tixi_handle.addTextAttribute(f"{xpath}/{i}", 'refType', 'absLocal')
+            add_uid(tixi_handle, f"{xpath}/{i}", f"{uid_name}_{i}1")
+            if i != 'scaling':
+                tixi_handle.addIntegerElement(f"{xpath}/{i}", 'x', 0, '%d')
+                tixi_handle.addIntegerElement(f"{xpath}/{i}", 'y', 0, '%d')
+                tixi_handle.addIntegerElement(f"{xpath}/{i}", 'z', 0, '%d')
+            else:
+                if j == 'elements':
+                    tixi_handle.addIntegerElement(f"{xpath}/{i}", 'x', 1, '%d')
+                    tixi_handle.addIntegerElement(f"{xpath}/{i}", 'y', 0, '%d')
+                    tixi_handle.addIntegerElement(f"{xpath}/{i}", 'z', 0, '%d')
+
+                else:
+                    tixi_handle.addIntegerElement(f"{xpath}/{i}", 'x', 1, '%d')
+                    tixi_handle.addIntegerElement(f"{xpath}/{i}", 'y', 1, '%d')
+                    tixi_handle.addIntegerElement(f"{xpath}/{i}", 'z', 1, '%d')
+
+    return section_uid, element_uid, tixi_handle
+
+
 def add_circular_fuse_profile(tixi_handle):
-    """Adds a circular profile to the CPACS file
+    """Internal function.
+    Adds a circular profile to the CPACS file
 
     Parameters
     ----------
