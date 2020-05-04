@@ -189,11 +189,8 @@ def cpacs_generate(aircraftname, tot_len, nose_frac=0.1, tail_frac=0.1):
                         tixi_handle.addIntegerElement(f"{trans_path}/{j}",
                                                         'z', 1, '%d')
         base_path += f"/{i}"
-        profile_id, tixi_handle = add_circular_fuse_profile(tixi_handle)
-
-
-        tixi_handle = add_section(tixi_handle, 'test', profile_id, 1) 
-        #tixi_handle = build_fuselage(tixi_handle, tot_len, nose_frac, tail_frac, 'Fuselagess')
+        
+    tixi_handle = build_fuselage(tixi_handle, tot_len, nose_frac, tail_frac, 'Fuselagess')
 
     # Check that CPACS file matches schema
     #tixi_handle.schemaValidateFromFile('cpacs_schema.xsd')
@@ -204,7 +201,7 @@ def build_fuselage(tixi_handle, tot_len, nose_frac, tail_frac, name):
     profile_id, tixi_handle = add_circular_fuse_profile(tixi_handle)
 
     #for i in range(1, 5):
-    section_uid, tixi_handle = add_section(tixi_handle, name, profile_id, 1)  
+    section_uid, tixi_handle = add_section(tixi_handle, 'testo', profile_id, 1)  
 
 
     # create loop for number of sections (4)
