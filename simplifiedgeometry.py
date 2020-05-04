@@ -7,6 +7,7 @@ from tixi3 import tixi3wrapper as tixi
 
 # currently only works for fuse_length
 
+
 def transformer(input_file, output_file='output_cpacs.xml', geometry_dict={}):
     """Transforms a CPACS aircraft geometry by rescaling individual sections
 
@@ -64,7 +65,7 @@ def section_transformer(tixi_handle, scale, num_sec):
             f'section[{i+1}]/transformation/translation/z'
 
         # get current values
-        x_val = tixi_handle.getDoubleElement(scaling_xpath+'x') 
+        x_val = tixi_handle.getDoubleElement(scaling_xpath+'x')
         y_val = tixi_handle.getDoubleElement(scaling_xpath+'y')
         z_val = tixi_handle.getDoubleElement(scaling_xpath+'z')
         z_val_elem = tixi_handle.getDoubleElement(translate_xpath)
@@ -116,7 +117,7 @@ def cpacs_generate(aircraftname, tot_len, nose_frac=0.1, tail_frac=0.1):
     aircraftname : str
         The name of the aircraft and filename of the output CPACS file
     tot_len : float
-        Total length of the fuselage 
+        Total length of the fuselage
     nose_frac : float, default = 0.1
         Fraction of the total length that comprises the nose section
     tail_frac : float, default = 0.1
@@ -176,14 +177,14 @@ def cpacs_generate(aircraftname, tot_len, nose_frac=0.1, tail_frac=0.1):
                              f"{base_uid}_{j}1")
                     if j != 'scaling':
                         tixi_handle.addIntegerElement(f"{trans_path}/{j}",
-                                                        'x', 0, '%d') 
+                                                        'x', 0, '%d')
                         tixi_handle.addIntegerElement(f"{trans_path}/{j}",
                                                         'y', 0, '%d')
                         tixi_handle.addIntegerElement(f"{trans_path}/{j}",
                                                         'z', 0, '%d')
                     else:
                         tixi_handle.addIntegerElement(f"{trans_path}/{j}",
-                                                        'x', 1, '%d') 
+                                                        'x', 1, '%d')
                         tixi_handle.addIntegerElement(f"{trans_path}/{j}",
                                                         'y', 1, '%d')
                         tixi_handle.addIntegerElement(f"{trans_path}/{j}",
@@ -191,10 +192,9 @@ def cpacs_generate(aircraftname, tot_len, nose_frac=0.1, tail_frac=0.1):
         base_path += f"/{i}"
 
     # Add segments and positionings tag
-    tixi_handle.createElement('/cpacs/vehicles/aircraft/model/fuselages/fuselage', 'segments')
     tixi_handle.createElement('/cpacs/vehicles/aircraft/model/fuselages/fuselage', 'positionings')
+    tixi_handle.createElement('/cpacs/vehicles/aircraft/model/fuselages/fuselage', 'segments')
 
-        
     tixi_handle = build_fuselage(tixi_handle, tot_len, nose_frac, tail_frac, 'Fuselage')
 
     # Check that CPACS file matches schema
@@ -210,7 +210,7 @@ def build_fuselage(tixi_handle, tot_len, nose_frac, tail_frac, name):
     tixi_handle : tixi handle object
         A tixi handle to the cpacs file to be created
     tot_len : float
-        Total length of the fuselage 
+        Total length of the fuselage
     nose_frac : float, default = 0.1
         Fraction of the total length that comprises the nose section
     tail_frac : float, default = 0.1
@@ -224,14 +224,14 @@ def build_fuselage(tixi_handle, tot_len, nose_frac, tail_frac, name):
     """
 
     profile_id, tixi_handle = add_circular_fuse_profile(tixi_handle)
-    
+
     previous_section = ''
     nose_len = nose_frac * tot_len
     tail_len = tail_frac * tot_len
     main_len = tot_len - nose_len - tail_len
     pos_len_vec = [0, nose_len, main_len, tail_len]
     for i in range(1, 5):
-        section_uid, tixi_handle = add_section(tixi_handle, name, profile_id, i)  
+        section_uid, tixi_handle = add_section(tixi_handle, name, profile_id, i)
         if i > 1:
             tixi_handle = add_segment(tixi_handle, name, previous_section, section_uid, i-1)
         if i == 1:
@@ -346,7 +346,7 @@ def add_section(tixi_handle, name, profile_id, section_num):
         if j == 'elements':
             tixi_handle.createElement(xpath, 'element')
             xpath += '/element'
-            uid_name = f"{name}section{section_num}ID_element1ID" 
+            uid_name = f"{name}section{section_num}ID_element1ID"
             add_uid(tixi_handle, xpath, uid_name)
             tixi_handle.addTextElement(xpath, 'name', f"{name}section{section_num}element1")
             tixi_handle.addTextElement(xpath, 'profileUID', profile_id)
@@ -360,11 +360,11 @@ def add_section(tixi_handle, name, profile_id, section_num):
                 tixi_handle.addTextAttribute(f"{xpath}/{i}", 'refType', 'absLocal')
             add_uid(tixi_handle, f"{xpath}/{i}", f"{uid_name}_{i}1")
             if i != 'scaling':
-                tixi_handle.addIntegerElement(f"{xpath}/{i}", 'x', 0, '%d') 
+                tixi_handle.addIntegerElement(f"{xpath}/{i}", 'x', 0, '%d')
                 tixi_handle.addIntegerElement(f"{xpath}/{i}", 'y', 0, '%d')
                 tixi_handle.addIntegerElement(f"{xpath}/{i}", 'z', 0, '%d')
             else:
-                tixi_handle.addIntegerElement(f"{xpath}/{i}", 'x', 1, '%d') 
+                tixi_handle.addIntegerElement(f"{xpath}/{i}", 'x', 1, '%d')
                 tixi_handle.addIntegerElement(f"{xpath}/{i}", 'y', 1, '%d')
                 tixi_handle.addIntegerElement(f"{xpath}/{i}", 'z', 1, '%d')
 
@@ -390,30 +390,25 @@ def add_circular_fuse_profile(tixi_handle):
     tixi_handle.createElement(base_path, 'profiles')
     base_path += '/profiles'
     tixi_handle.createElement(base_path, 'fuselageProfiles')
-    base_path+= '/fuselageProfiles'
+    base_path += '/fuselageProfiles'
     tixi_handle.createElement(base_path, 'fuselageProfile')
-    base_path+= '/fuselageProfile'
+    base_path += '/fuselageProfile'
     profile_id = 'fuselageCircleProfileID'
     add_uid(tixi_handle, base_path, profile_id)
     tixi_handle.addTextElement(base_path, 'name', 'Circle')
     tixi_handle.addTextElement(base_path, 'description', 'Profile build up from set of points on circle where dimensions are 1 ... -1')
     tixi_handle.createElement(base_path, 'pointList')
     base_path += '/pointList'
-    
+
     # Add points
-    x_vec = [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
-    y_vec = [0.0,0.0774924206719,0.154518792808,0.230615870742,0.305325997695,0.378199858172,0.4487991802,0.516699371152,0.581492071288,0.642787609687,0.700217347767,0.753435896328,0.802123192755,0.84598642592,0.884761797177,0.91821610688,0.946148156876,0.968389960528,0.984807753012,0.995302795793,0.999811970449,0.998308158271,0.990800403365,0.977333858251,0.957989512315,0.932883704732,0.902167424781,0.866025403784,0.824675004109,0.778364911924,0.727373641573,0.672007860556,0.612600545193,0.549508978071,0.483112599297,0.413810724505,0.342020143326,0.268172612761,0.192712260548,0.116092914125,0.0387753712568,-0.0387753712568,-0.116092914125,-0.192712260548,-0.268172612761,-0.342020143326,-0.413810724505,-0.483112599297,-0.549508978071,-0.612600545193,-0.672007860556,-0.727373641573,-0.778364911924,-0.824675004109,-0.866025403784,-0.902167424781,-0.932883704732,-0.957989512315,-0.977333858251,-0.990800403365,-0.998308158271,-0.999811970449,-0.995302795793,-0.984807753012,-0.968389960528,-0.946148156876,-0.91821610688,-0.884761797177,-0.84598642592,-0.802123192755,-0.753435896328,-0.700217347767,-0.642787609687,-0.581492071288,-0.516699371152,-0.4487991802,-0.378199858172,-0.305325997695,-0.230615870742,-0.154518792808,-0.0774924206719,0.0]
-    z_vec = [1.0,0.996992941168,0.987989849477,0.97304487058,0.952247885338,0.925723969269,0.893632640323,0.85616689953,0.813552070263,0.766044443119,0.713929734558,0.657521368569,0.597158591703,0.533204432802,0.466043519703,0.396079766039,0.323733942058,0.249441144058,0.173648177667,0.0968108707032,0.0193913317718,-0.0581448289105,-0.13533129975,-0.211703872229,-0.286803232711,-0.360177724805,-0.431386065681,-0.5,-0.565606875487,-0.627812124672,-0.686241637869,-0.740544013109,-0.790392669519,-0.835487811413,-0.875558231302,-0.910362940966,-0.939692620786,-0.963370878616,-0.981255310627,-0.993238357742,-0.999247952504,-0.999247952504,-0.993238357742,-0.981255310627,-0.963370878616,-0.939692620786,-0.910362940966,-0.875558231302,-0.835487811413,-0.790392669519,-0.740544013109,-0.686241637869,-0.627812124672,-0.565606875487,-0.5,-0.431386065681,-0.360177724805,-0.286803232711,-0.211703872229,-0.13533129975,-0.0581448289105,0.0193913317718,0.0968108707032,0.173648177667,0.249441144058,0.323733942058,0.396079766039,0.466043519703,0.533204432802,0.597158591703,0.657521368569,0.713929734558,0.766044443119,0.813552070263,0.85616689953,0.893632640323,0.925723969269,0.952247885338,0.97304487058,0.987989849477,0.996992941168,1.0]
-    tixi_handle.addFloatVector(base_path, 'x', x_vec, len(x_vec), '%g')
-    tixi_handle.addFloatVector(base_path, 'y', y_vec, len(y_vec), '%g')
-    tixi_handle.addFloatVector(base_path, 'z', z_vec, len(z_vec), '%g')
-
-
+    x_vec = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    y_vec = [0.0, 0.0774924206719, 0.154518792808, 0.230615870742, 0.305325997695, 0.378199858172, 0.4487991802, 0.516699371152, 0.581492071288, 0.642787609687, 0.700217347767, 0.753435896328, 0.802123192755, 0.84598642592, 0.884761797177, 0.91821610688, 0.946148156876, 0.968389960528, 0.984807753012, 0.995302795793, 0.999811970449, 0.998308158271, 0.990800403365, 0.977333858251, 0.957989512315, 0.932883704732, 0.902167424781, 0.866025403784, 0.824675004109, 0.778364911924, 0.727373641573, 0.672007860556, 0.612600545193, 0.549508978071, 0.483112599297, 0.413810724505, 0.342020143326, 0.268172612761, 0.192712260548, 0.116092914125, 0.0387753712568, -0.0387753712568, -0.116092914125, -0.192712260548, -0.268172612761, -0.342020143326, -0.413810724505, -0.483112599297, -0.549508978071, -0.612600545193, -0.672007860556, -0.727373641573, -0.778364911924, -0.824675004109, -0.866025403784, -0.902167424781, -0.932883704732, -0.957989512315, -0.977333858251, -0.990800403365, -0.998308158271, -0.999811970449, -0.995302795793, -0.984807753012, -0.968389960528, -0.946148156876, -0.91821610688, -0.884761797177, -0.84598642592, -0.802123192755, -0.753435896328, -0.700217347767, -0.642787609687, -0.581492071288, -0.516699371152, -0.4487991802, -0.378199858172, -0.305325997695, -0.230615870742, -0.154518792808, -0.0774924206719, 0.0]
+    z_vec = [1.0, 0.996992941168, 0.987989849477, 0.97304487058, 0.952247885338, 0.925723969269, 0.893632640323, 0.85616689953, 0.813552070263, 0.766044443119, 0.713929734558, 0.657521368569, 0.597158591703, 0.533204432802, 0.466043519703, 0.396079766039, 0.323733942058, 0.249441144058, 0.173648177667, 0.0968108707032, 0.0193913317718, -0.0581448289105, -0.13533129975, -0.211703872229, -0.286803232711, -0.360177724805, -0.431386065681, -0.5, -0.565606875487, -0.627812124672, -0.686241637869, -0.740544013109, -0.790392669519, -0.835487811413, -0.875558231302, -0.910362940966, -0.939692620786, -0.963370878616, -0.981255310627, -0.993238357742, -0.999247952504, -0.999247952504, -0.993238357742, -0.981255310627, -0.963370878616, -0.939692620786, -0.910362940966, -0.875558231302, -0.835487811413, -0.790392669519, -0.740544013109, -0.686241637869, -0.627812124672, -0.565606875487, -0.5, -0.431386065681, -0.360177724805, -0.286803232711, -0.211703872229, -0.13533129975, -0.0581448289105, 0.0193913317718, 0.0968108707032, 0.173648177667, 0.249441144058, 0.323733942058, 0.396079766039, 0.466043519703, 0.533204432802, 0.597158591703, 0.657521368569, 0.713929734558, 0.766044443119, 0.813552070263, 0.85616689953, 0.893632640323, 0.925723969269, 0.952247885338, 0.97304487058, 0.987989849477, 0.996992941168, 1.0]
+    tixi_handle.addFloatVector(base_path, 'x', x_vec, len(x_vec), '%.12f')
+    tixi_handle.addFloatVector(base_path, 'y', y_vec, len(y_vec), '%.12f')
+    tixi_handle.addFloatVector(base_path, 'z', z_vec, len(z_vec), '%.12f')
 
     return profile_id, tixi_handle
-
-
-
 
 
 # ------------------------------
